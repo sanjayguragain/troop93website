@@ -24,14 +24,14 @@
 <body>
     <!-- Header -->
     <header id="main-header">
-        <div class="container flex justify-between items-center" style="padding: 1.25rem 1.5rem;">
-            <a href="index.html" class="flex items-center gap-3">
+        <div class="container flex items-center justify-between" style="height: 5rem;">
+            <div class="flex items-center gap-3">
                 <div
-                    style="width: 2.5rem; height: 2.5rem; background: var(--primary); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; color: var(--forest);">
-                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+                    style="background-color: var(--primary); color: var(--forest); padding: 0.4rem; border-radius: 0.5rem; display: flex; align-items: center;">
+                    <span class="material-symbols-outlined" style="font-weight: bold;">explore</span>
                 </div>
-                <span style="font-size: 1.25rem; font-weight: 800; letter-spacing: -0.02em;">Troop 93</span>
-            </a>
+                <h2 style="font-size: 1.25rem; font-weight: 800; letter-spacing: -0.025em;">Troop 93</h2>
+            </div>
 
             <nav class="hidden md-flex items-center gap-8">
                 <a href="index.html" class="nav-link">Home</a>
@@ -40,12 +40,17 @@
                 <a href="eagles.html" class="nav-link" style="color: #ca8a04; font-weight: 800;">Eagle Scouts</a>
                 <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="resources.html" class="nav-link">Resources</a>
-                <a href="contact.html" class="nav-link" style="color: var(--primary);">Contact</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </nav>
 
-            <button class="md-hidden" style="color: var(--forest);">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="https://www.TroopWebHost.org" target="_blank" class="hidden md-flex"
+                    style="font-size: 0.875rem; font-weight: 700; border: 1px solid rgba(13,27,18,0.2); padding: 0.5rem 1rem; border-radius: 0.5rem;">Member
+                    Portal</a>
+                <button class="md-hidden mobile-menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
         </div>
     </header>
 
