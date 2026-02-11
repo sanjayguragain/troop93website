@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Troop 93 Our Adventures</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Explore the adventures of Troop 93. Capturing the spirit of scouting through every hike, campfire, and community service project.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .masonry-grid {
+            columns: 1;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 640px) {
+            .masonry-grid {
+                columns: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                columns: 3;
+            }
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+
+        .photo-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1rem;
+            cursor: pointer;
+            background: var(--slate-100);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+            display: block;
+        }
+
+        .photo-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(16, 34, 16, 0.9) 0%, rgba(16, 34, 16, 0) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            color: var(--white);
+        }
+
+        .photo-card:hover .photo-overlay {
+            opacity: 1;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .filter-btn {
+            border-radius: 2rem;
+            font-weight: 700;
+            font-size: 0.875rem;
+            border: 1px solid rgba(13, 27, 18, 0.1);
+            color: var(--slate-600);
+            padding: 0.6rem 1.5rem;
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+            box-shadow: 0 10px 15px -3px rgba(17, 212, 17, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container flex items-center justify-between" style="height: 5rem;">
+            <div class="flex items-center gap-3">
+                <div
+                    style="background-color: var(--primary); color: var(--forest); padding: 0.4rem; border-radius: 0.5rem; display: flex; align-items: center;">
+                    <span class="material-symbols-outlined" style="font-weight: bold;">explore</span>
+                </div>
+                <h2 style="font-size: 1.25rem; font-weight: 800; letter-spacing: -0.025em;">Troop 93</h2>
+            </div>
+
+            <nav class="hidden md-flex items-center gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="leadership.html" class="nav-link">Leadership</a>
+                <a href="eagles.html" class="nav-link">Eagle Scouts</a>
+                <a href="gallery.html" class="nav-link" style="color: var(--primary);">Gallery</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://www.TroopWebHost.org" target="_blank" class="hidden md-flex"
+                    style="font-size: 0.875rem; font-weight: 700; border: 1px solid rgba(13,27,18,0.2); padding: 0.5rem 1rem; border-radius: 0.5rem;">Member
+                    Portal</a>
+                <button class="md-hidden mobile-menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container section-padding" style="padding-top: 8rem;">
+
+        <!-- Hero Section -->
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <h1 style="font-size: clamp(2.5rem, 6vw, 3.5rem); margin-bottom: 1rem;">Our Adventures</h1>
+            <p style="color: var(--slate-600); max-width: 36rem; margin: 0 auto; font-size: 1.125rem;">
+                Capturing the spirit of scouting through every hike, campfire, and community service project. Explore
+                our journey in the great outdoors.
+            </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="flex flex-wrap justify-center gap-3" style="margin-bottom: 4rem;">
+            <button class="filter-btn active">All Photos</button>
+            <button class="filter-btn">High Adventure</button>
+            <button class="filter-btn">Summer Camp</button>
+            <button class="filter-btn">Service Projects</button>
+            <button class="filter-btn">Troop Meetings</button>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="masonry-grid">
+            <!-- Photo 1 -->
+            <div class="masonry-item">
+                <div class="photo-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYW7tShodu90i84d_1T0wifiQwo-d18Nb1VMtO-C-7nz22IAQczxNHiBYawP8EGY_wDX13FBjtVC8xX87zlJIVIse9qU0EDm7PGIT1KUx_OMVCseUKiHbP_lQCpXonRjTcqbvmoFh6Rk-qPVgFSTClY22Tn2chCT0kQ63Psw-Ewe42ldeg8EDsSPd1RpBIyQ981HhFRUBXrQ6e0MfKgZzbHqiOA0mIH1md6NbFR6HI94SgU9u3SpPBCShpqPBafHXdooy3BAKL0nE"
+                        alt="High Adventure">
+                    <div class="photo-overlay">
+                        <span
+                            style="font-size: 0.65rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem;">High
+                            Adventure</span>
+                        <h3 style="font-size: 1.25rem; font-weight: 800;">Philmont Scout Ranch</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.7;">Summer 2023</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo 2 -->
+            <div class="masonry-item">
+                <div class="photo-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpfvu_TQ8xLcoPEU056mtELfCQtAbC9sSD8QCWi7_0AcsvpoefJnj9zot27yBmIO50BJUh_-kLwwcI2vcIJQNkVQ2kZzMp3F9b0aTsVhjqpoJ5DnfJwrTkyjPSlF25CIhL5CWWpdkUAVFwXuPYRRhqEyuM8ZZKdDUd5m3bXMVrGoyPgGJ7aIsLv127OhHDUiUrYYWYzlmPDU_7CylM_NtoMm2qLV2UxdpyYP6tadlLy4SzN3DnjOdWx5txpGkxF3v4BtkkVJsPpig"
+                        alt="Service Project">
+                    <div class="photo-overlay">
+                        <span
+                            style="font-size: 0.65rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem;">Service
+                            Projects</span>
+                        <h3 style="font-size: 1.25rem; font-weight: 800;">Earth Day Forest Restoration</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.7;">Spring 2024</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo 3 -->
+            <div class="masonry-item">
+                <div class="photo-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwwIn1OJFlcyldhS5jVX5hIRwfnzQb9pK-4meehjQXfD4TnTny4qM5_lBOTMevBvXhwiyJYd81RkkMIIk8e4Y_gXXhUMGFP7mPIU37lbUQg6vDC32hWsp5rmLWMkzpo51_PumLrG_aUukEJ7G8uEMfiXRsmU6A2D-gFTauMrrbAvWVRlTmiv9oXXYEMIQ3LNRzCjCxV2IbefCEdeJnZDT80pxKDUFxRrXCaU2sqa3z_1aA56xfyDX52DAOW3DkeBbeoTSYpfK1D2s"
+                        alt="Summer Camp">
+                    <div class="photo-overlay">
+                        <span
+                            style="font-size: 0.65rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem;">Summer
+                            Camp</span>
+                        <h3 style="font-size: 1.25rem; font-weight: 800;">Closing Campfire Ceremony</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.7;">August 2023</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo 4 -->
+            <div class="masonry-item">
+                <div class="photo-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZj92GOwM2Rr_WmkatShpPtXHiVng1bErmhCc3uhy9_6MbOEaw02TZkK72aXuzAmlWAHDB2OJPK9l1SWBpuvxjB4ZmYJ6eC_IDJQ2V5Pow2wGE2PpGzaUYow-mHM7wpay2S4ZG4Jwk-X9kjOYXVS7Qg59TNujhx9lEVpJS1ZrLQntx-PX6O4YzQXXO3Tq42DCYo9QZzUfFPs-pe9RGRPMXB8xinTnnQpMgSoRRqm6_c1rraCQJSAnAMDOVXRzbFYmKMJtd8NdQlvI"
+                        alt="Kayaking">
+                    <div class="photo-overlay">
+                        <span
+                            style="font-size: 0.65rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem;">High
+                            Adventure</span>
+                        <h3 style="font-size: 1.25rem; font-weight: 800;">Northern Tier Expedition</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.7;">July 2023</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo 5 -->
+            <div class="masonry-item">
+                <div class="photo-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_qYJMA019Ojz4XFYsYkGbt2ZdK4lVRmv4jqqo0-LbtqVpYYyu-rGqsW3v2ftSAFB45SJNG5jmAM35Tdek8rSvV_AZr9EX_zlXWyvVXJmdXEa0PYv0ouL8ezRILspyAptYILteHM9nh_8huh25bnScs0-QC9RoR4rX5IkGi-nwIkl7vXCgguVKoR3rqrYrfHiz3GWc4S0SG1HAr31vZyPXPwc3vtKpi0pu02YJ0MuEIMYzAMf7-Xo94M4RiLRSg_18MPsm5xJC3VI"
+                        alt="Workshop">
+                    <div class="photo-overlay">
+                        <span
+                            style="font-size: 0.65rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem;">Troop
+                            Meetings</span>
+                        <h3 style="font-size: 1.25rem; font-weight: 800;">Woodwork Merit Badge</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.7;">Winter 2024</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Photo 6 -->
+            <div class="masonry-item">
+                <div class="photo-card">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9nVLrYhcs5Sd02QafXJNpzP6Pu5rABIXoGgKlt8T2ElMdu9pBnF64qSP7XI8Fz4TlxRh-Nu_z9O1CE1eB674k--9O4mXz5ckx2TJDmEVk-IaE7-OFuy9OasSlgCXkBMSbfepF49Zorq_MmRWlsMGU-H0xcD4xZb9IkT1H1Tgd0CPFQM0hHuMAgUZIwS9M80cYvt7PzSrG5TLDN94DqifqvFQME-u0Ha3L3DRQ77cTzAH2rv3frWdjX-eZehevZZB_Dqrz_eocQAI"
+                        alt="Ceremony">
+                    <div class="photo-overlay">
+                        <span
+                            style="font-size: 0.65rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem;">Summer
+                            Camp</span>
+                        <h3 style="font-size: 1.25rem; font-weight: 800;">Morning Colors</h3>
+                        <p style="font-size: 0.875rem; opacity: 0.7;">June 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More -->
+        <div style="text-align: center; margin-top: 4rem;">
+            <button class="btn-secondary"
+                style="background: var(--white); color: var(--forest); border-color: rgba(13,27,18,0.1); display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin: 0 auto;">
+                Load More Adventures <span class="material-icons">expand_more</span>
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="grid lg-grid-cols-4 gap-8" style="margin-bottom: 4rem;">
+                <div>
+                    <div class="flex items-center gap-3" style="margin-bottom: 1.5rem;">
+                        <span class="material-symbols-outlined" style="color: var(--primary);">explore</span>
+                        <h2 style="font-size: 1.25rem;">Troop 93</h2>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.875rem; line-height: 1.6;">
+                        Scouting is more than just camping. It's about personal growth, community service, and
+                        discovering what it means to be a leader.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.125rem; margin-bottom: 1.5rem;">Our Location</h3>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined"
+                                style="color: var(--primary); font-size: 1.25rem;">location_on</span>
+                            <p class="footer-link">Community Center Hall<br>123 Scout Way, Forest Park, CA</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined"
+                                style="color: var(--primary); font-size: 1.25rem;">event</span>
+                            <p class="footer-link">Every Tuesday at 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 1.125rem; margin-bottom: 1.5rem;">Quick Links</h3>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="leadership.html" class="footer-link">Leadership</a></li>
+                        <li><a href="eagles.html" class="footer-link">Eagle Scouts</a></li>
+                        <li><a href="gallery.html" class="footer-link">Photo Gallery</a></li>
+                        <li><a href="join.html" class="footer-link">Join the Troop</a></li>
+                    </ul>
+                </div>
+
+                <div style="text-align: right;">
+                    <div
+                        style="background-color: rgba(17,212,17,0.1); border: 1px solid rgba(17,212,17,0.3); padding: 1.5rem; border-radius: 1rem; display: inline-block;">
+                        <span
+                            style="color: var(--primary); font-size: 2.25rem; font-weight: 900; display: block;">1922</span>
+                        <span
+                            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7;">Established
+                            Year</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem;"
+                class="flex flex-col md-flex-row justify-between items-center gap-4">
+                <p style="font-size: 0.75rem; color: rgba(255,255,255,0.4);">© 2024 BSA Troop 93. All rights reserved.
+                </p>
+                <div class="flex gap-6">
+                    <a href="#" class="footer-link" style="font-size: 0.75rem;">Privacy Policy</a>
+                    <a href="#" class="footer-link" style="font-size: 0.75rem;">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

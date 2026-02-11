@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Troop 93 | Resources &amp; Forms</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d411",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-icons">terrain</span>
+</div>
+<span class="font-bold text-xl tracking-tight">TROOP 93</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Calendar</a>
+<a class="text-sm font-medium text-primary border-b-2 border-primary" href="#">Resources</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+<button class="bg-primary text-white px-5 py-2 rounded-lg font-semibold text-sm hover:opacity-90 transition-all">Member Login</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="py-12 md:py-20 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -z-10"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-2xl">
+<h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-slate-900 dark:text-white">Resources &amp; Forms</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400">Everything you need for your scouting journey. Download medical forms, trip checklists, and merit badge materials in one central location.</p>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+<!-- Search and Quick Filters -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-12">
+<div class="relative flex-1 max-w-lg">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-xl border-slate-200 focus:ring-primary focus:border-primary dark:bg-slate-800 dark:border-slate-700" placeholder="Search for documents (e.g. 'Medical', 'Packing')..." type="text"/>
+</div>
+<div class="flex items-center gap-2 text-sm text-slate-500">
+<span>Quick filters:</span>
+<button class="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20">All</button>
+<button class="px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-primary">New Updates</button>
+</div>
+</div>
+<!-- Categories Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+<!-- Forms Card -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all cursor-pointer">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-icons text-3xl">assignment</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Essential Forms</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Registration, medical consent, and activity permission slips for all scouts.</p>
+<span class="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Browse Forms <span class="material-icons text-sm">arrow_forward</span>
+</span>
+</div>
+<!-- Checklists Card -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all cursor-pointer">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-icons text-3xl">checklist</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Camping Checklists</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Don't forget the essentials. Packing lists for summer camp and weekend trips.</p>
+<span class="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Get Ready <span class="material-icons text-sm">arrow_forward</span>
+</span>
+</div>
+<!-- Merit Badge Card -->
+<div class="group bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all cursor-pointer">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-icons text-3xl">verified</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Merit Badge Info</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Blue cards, counselor directories, and digital workbooks for your advancement.</p>
+<span class="text-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                    View Requirements <span class="material-icons text-sm">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Detailed Resource List (Forms) -->
+<section class="mb-16">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<h2 class="text-2xl font-bold">Latest Documents</h2>
+<span class="bg-primary/20 text-primary text-xs font-bold px-2 py-1 rounded-full uppercase tracking-wider">Recently Added</span>
+</div>
+<a class="text-primary font-medium text-sm flex items-center gap-1 hover:underline" href="#">
+                    View all 24 documents
+                </a>
+</div>
+<div class="space-y-4">
+<!-- Item 1 -->
+<div class="flex flex-col md:flex-row md:items-center bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-100 dark:border-slate-700 group hover:shadow-md transition-shadow">
+<div class="flex items-center flex-1 gap-4 mb-4 md:mb-0">
+<div class="w-12 h-12 bg-red-50 dark:bg-red-900/20 rounded-lg flex items-center justify-center text-red-500">
+<span class="material-icons">picture_as_pdf</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-slate-100">Annual Health &amp; Medical Record</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wide">Required for all outings • Parts A, B, &amp; C</p>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8">
+<div class="text-right hidden sm:block">
+<p class="text-xs font-semibold text-slate-400">UPDATED</p>
+<p class="text-sm font-medium">May 12, 2024</p>
+</div>
+<div class="text-right hidden sm:block">
+<p class="text-xs font-semibold text-slate-400">SIZE</p>
+<p class="text-sm font-medium">1.2 MB</p>
+</div>
+<div class="flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors" title="View Preview">
+<span class="material-icons">visibility</span>
+</button>
+<button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm hover:brightness-110 transition-all shadow-sm">
+<span class="material-icons text-base">download</span>
+                                Download
+                            </button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col md:flex-row md:items-center bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-100 dark:border-slate-700 group hover:shadow-md transition-shadow">
+<div class="flex items-center flex-1 gap-4 mb-4 md:mb-0">
+<div class="w-12 h-12 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-center justify-center text-blue-500">
+<span class="material-icons">description</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-slate-100">Weekend Trip Packing List</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wide">Standard gear for typical campouts</p>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8">
+<div class="text-right hidden sm:block">
+<p class="text-xs font-semibold text-slate-400">UPDATED</p>
+<p class="text-sm font-medium">Jan 20, 2024</p>
+</div>
+<div class="text-right hidden sm:block">
+<p class="text-xs font-semibold text-slate-400">SIZE</p>
+<p class="text-sm font-medium">450 KB</p>
+</div>
+<div class="flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors" title="View Preview">
+<span class="material-icons">visibility</span>
+</button>
+<button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm hover:brightness-110 transition-all shadow-sm">
+<span class="material-icons text-base">download</span>
+                                Download
+                            </button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col md:flex-row md:items-center bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-100 dark:border-slate-700 group hover:shadow-md transition-shadow">
+<div class="flex items-center flex-1 gap-4 mb-4 md:mb-0">
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+<span class="material-icons">edit_note</span>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-slate-100">BSA Activity Consent Form</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wide">Standard permission slip template</p>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-8">
+<div class="text-right hidden sm:block">
+<p class="text-xs font-semibold text-slate-400">UPDATED</p>
+<p class="text-sm font-medium">Mar 05, 2024</p>
+</div>
+<div class="text-right hidden sm:block">
+<p class="text-xs font-semibold text-slate-400">SIZE</p>
+<p class="text-sm font-medium">820 KB</p>
+</div>
+<div class="flex gap-2">
+<button class="p-2 text-slate-400 hover:text-primary transition-colors" title="View Preview">
+<span class="material-icons">visibility</span>
+</button>
+<button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-bold text-sm hover:brightness-110 transition-all shadow-sm">
+<span class="material-icons text-base">download</span>
+                                Download
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Help Section -->
+<section class="bg-primary rounded-2xl p-8 md:p-12 text-white overflow-hidden relative">
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl text-center md:text-left">
+<h2 class="text-3xl font-bold mb-4">Can't find a specific form?</h2>
+<p class="text-white/80">If you're looking for a specific merit badge workbook or a special activity waiver that isn't listed here, please reach out to the Scoutmaster or Troop Committee.</p>
+</div>
+<div class="flex-shrink-0">
+<button class="bg-white text-primary px-8 py-3 rounded-xl font-bold text-lg hover:bg-opacity-90 transition-all shadow-xl">
+                        Request a Document
+                    </button>
+</div>
+</div>
+<!-- Abstract background shape -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-black/10 rounded-full -ml-10 -mb-10 blur-2xl"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-950 py-12 border-t border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center text-white">
+<span class="material-icons text-sm">terrain</span>
+</div>
+<span class="font-bold text-lg tracking-tight">TROOP 93</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm max-w-sm">Serving our community and developing future leaders through the BSA program. Chartered by Community Church of Our Town.</p>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-4 uppercase tracking-wider">Troop Links</h5>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Calendar</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Photo Gallery</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Leadership</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Eagle Scout Roll</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-sm mb-4 uppercase tracking-wider">BSA Links</h5>
+<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Scouting America</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Scoutbook</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">My.Scouting</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">MeritBadge.org</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-slate-400">© 2024 BSA Troop 93. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-icons">facebook</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-icons">camera_alt</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-icons">email</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

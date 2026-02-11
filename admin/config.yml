@@ -1,0 +1,69 @@
+backend:
+  name: github
+  repo: your-username/troop93website # Replaced by user during deployment
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/home.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Description", name: "hero_description", widget: "text" }
+          - { label: "Chartered Date", name: "chartered_date", widget: "string" }
+      - file: "content/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Story Section 1", name: "story_1", widget: "markdown" }
+          - { label: "Story Section 2", name: "story_2", widget: "markdown" }
+
+  - name: "leadership"
+    label: "Leadership"
+    folder: "data/leadership"
+    create: true
+    slug: "{{fields.name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Type", name: "type", widget: "select", options: ["Adult", "Youth"] }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Eagle Candidate", name: "eagle_candidate", widget: "boolean", default: false, required: false }
+
+  - name: "gallery"
+    label: "Gallery"
+    folder: "data/gallery"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["High Adventure", "Summer Camp", "Service Projects", "Troop Meetings"] }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Date", name: "date", widget: "string" }
+
+  - name: "events"
+    label: "Featured Events"
+    folder: "data/events"
+    create: true
+    fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Category", name: "category", widget: "string" }
+        - { label: "Date Range", name: "date_range", widget: "string" }
+        - { label: "Description", name: "description", widget: "text" }
+        - { label: "Image", name: "image", widget: "image" }
+
+  - name: "eagle_scouts"
+    label: "Eagle Scouts"
+    folder: "data/eagle_scouts"
+    create: true
+    fields:
+      - { label: "Full Name", name: "title", widget: "string" }
+      - { label: "Year Achieved", name: "year", widget: "number" }
+      - { label: "Eagle Project", name: "project", widget: "text", required: false }

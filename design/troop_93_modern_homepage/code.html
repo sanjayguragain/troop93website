@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Troop 93 Modern Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                        "forest": "#0d1b12",
+                        "khaki": "#eef2ed",
+                        "moss": "#4c9a66",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-nav {
+            background: rgba(246, 248, 246, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background-light text-forest font-display">
+<!-- Header / Navigation -->
+<header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-forest/10">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="bg-primary text-forest p-1.5 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl font-bold">explore</span>
+</div>
+<h2 class="text-forest text-xl font-bold tracking-tight">Troop 93</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-forest text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-forest text-sm font-semibold hover:text-primary transition-colors" href="#">Photo Gallery</a>
+<a class="text-forest text-sm font-semibold hover:text-primary transition-colors" href="#">Resources</a>
+<a class="text-forest text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
+<a class="text-forest text-sm font-semibold hover:text-primary transition-colors" href="#">Leadership</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden lg:inline-flex text-forest/70 text-sm font-bold border border-forest/20 hover:border-primary hover:text-forest px-4 py-2 rounded-lg transition-all" href="#">
+                    Troop Web Host Login
+                </a>
+<button class="md:hidden text-forest">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Stunning panoramic mountain range at sunset" style="background-image: linear-gradient(rgba(13, 27, 18, 0.6), rgba(13, 27, 18, 0.4)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6mislAI_4lnfpUey8HgC7TkFTo0f5dj4iYqdPLDYa-Yr-tJYyA0Or8-UFtMCP0oEgEeZbw3c-lk6eqUz-dCGxZgxUZyWEIkyKETL_WpvEv_W3LwXsqigU6vI1lpH-khXXVf9ou0VuIRk2IO653l9EqJn9mANYK091OvKFJG-SHdVI4JnKiPzV4JOpcORqUdLrgajMIqaKb4pWoADvdVg4aiCiWClU326n2eVIK-flXmsrm94F_fG03Ad-ehJMqS3DIGJDfS-kvrQ');"></div>
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Chartered Since 1922</span>
+<h1 class="text-white text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6">
+                Welcome to <span class="text-primary">Troop 93</span>
+</h1>
+<p class="text-white/90 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+                Building the next generation of leaders through adventure, teamwork, and service. Experience the great outdoors with our award-winning scouting program.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="bg-primary text-forest px-10 py-4 rounded-xl font-extrabold text-lg hover:shadow-xl hover:shadow-primary/20 transition-all transform hover:-translate-y-1">
+                    Join Our Troop
+                </button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-xl font-extrabold text-lg hover:bg-white/20 transition-all">
+                    Learn More
+                </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
+<span class="material-symbols-outlined text-white/50 text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Main Content Area -->
+<main class="max-w-7xl mx-auto px-6 lg:px-12 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Column 1: Upcoming Adventures -->
+<div class="lg:col-span-7 space-y-8">
+<div class="flex items-center justify-between border-b border-forest/5 pb-6">
+<div>
+<h2 class="text-3xl font-extrabold text-forest tracking-tight">Upcoming Adventures</h2>
+<p class="text-moss font-medium mt-1">Gear up for our next outings</p>
+</div>
+<button class="text-forest font-bold text-sm flex items-center gap-1 group">
+                        View Calendar <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid gap-6">
+<!-- Adventure Card 1 -->
+<div class="group bg-white rounded-2xl border border-forest/5 p-6 flex flex-col md:flex-row gap-6 hover:shadow-xl hover:shadow-forest/5 transition-all">
+<div class="md:w-48 h-32 rounded-xl overflow-hidden flex-shrink-0">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Mountain campsite with tents under trees" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkTJts-7JaDGJoKcVXAfUZgnkLqhO6AHdTTek1x7hkCaT0I5RbQGU2dvOy_Qmsm0Vdr-jJqom_kNshdz79BLDbhgWfxENh7662ZkmP6B0S2OOlmB-AaCdxYV27Yt-qPvY8gf1HtozmqjHsh4cUZ6ceuPXREH_JAXxVpD-97fPL3iOXRuCfScXRuD4dIhyZe7SNU4JGGV74UIxjl8kDFhzBnYpwQKlgno7D8uLiH5puRa-zHpFjfGOU5ALEWtLYumTUab3ahl7TVPE');"></div>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-primary/20 text-forest text-xs font-bold px-2.5 py-1 rounded-full">High Adventure</span>
+<span class="text-moss text-xs font-bold uppercase tracking-wider">July 15 - 21</span>
+</div>
+<h3 class="text-xl font-bold text-forest group-hover:text-moss transition-colors">Summer Camp 2024</h3>
+<p class="text-forest/60 text-sm mt-2 line-clamp-2">A week-long adventure in the High Sierra focused on merit badges, swimming, and wilderness survival skills.</p>
+</div>
+</div>
+<!-- Adventure Card 2 -->
+<div class="group bg-white rounded-2xl border border-forest/5 p-6 flex flex-col md:flex-row gap-6 hover:shadow-xl hover:shadow-forest/5 transition-all">
+<div class="md:w-48 h-32 rounded-xl overflow-hidden flex-shrink-0">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Kayaks on a clear mountain lake" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBwdZimguBefw5O0Yb5e0YeCz_VZM58fIn_YOFT7mmSt2t_BfyY9Cm9vbukt93aAunJ25ycMsNlzaokSsaf76lb2s80kKl67uCngLGsrRT6t0JIqjR3K8DEhdigoQHbMDDOXlrzNRcOwgYjc3cNtkTq9slxCnF8u83h-6OCKZflqP9Zwi8KkAzPVn5oWvmX-FnYQxFAf-UB2sfQ-7ua7xEQjOR6RPueRckjQLgho6VvpdS4zGJmWPSxozSKfWKzJNtuKD7VKomWvq8');"></div>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-primary/20 text-forest text-xs font-bold px-2.5 py-1 rounded-full">Water Sports</span>
+<span class="text-moss text-xs font-bold uppercase tracking-wider">August 10</span>
+</div>
+<h3 class="text-xl font-bold text-forest group-hover:text-moss transition-colors">Crystal Lake Kayaking</h3>
+<p class="text-forest/60 text-sm mt-2 line-clamp-2">Master paddling techniques and explore the pristine waters of Crystal Lake. Open to all ranks.</p>
+</div>
+</div>
+<!-- Adventure Card 3 -->
+<div class="group bg-white rounded-2xl border border-forest/5 p-6 flex flex-col md:flex-row gap-6 hover:shadow-xl hover:shadow-forest/5 transition-all">
+<div class="md:w-48 h-32 rounded-xl overflow-hidden flex-shrink-0">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" data-alt="Close up of a scouting merit badge" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIr0GyfPklgTr4yqyFV4wesMlqlcHpEmJF_BSsK-_EdoWLLp539tfF91AAlEjJ3tHCme8BSWEW2vi3I0Nn5PJ27mxiaZFKHCG9XZnqDyQG-8IxRg5g0DURAuw_EG7QecEm3jNMaOkt5bNF8nU14fApl1_DwCzcbkTZJSVugeX-PXjRSN5AX2BkDgs0FrIiGzv8-Cae7Fro1BYxIKDFc0QlQqoxHenOHXt0iQOxjNyEmjO66_nzCbamk9a7Gh8rQvLu_q_KMeW4ICE');"></div>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-primary/20 text-forest text-xs font-bold px-2.5 py-1 rounded-full">Educational</span>
+<span class="text-moss text-xs font-bold uppercase tracking-wider">September 5</span>
+</div>
+<h3 class="text-xl font-bold text-forest group-hover:text-moss transition-colors">Merit Badge Clinic</h3>
+<p class="text-forest/60 text-sm mt-2 line-clamp-2">Accelerate your progress to Eagle Scout with our quarterly multi-disciplinary merit badge workshop.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Column 2: Connect With Us -->
+<div class="lg:col-span-5">
+<div class="bg-khaki rounded-3xl p-8 lg:p-12 sticky top-32">
+<div class="mb-8">
+<h2 class="text-3xl font-extrabold text-forest tracking-tight">Connect With Us</h2>
+<p class="text-forest/60 mt-2 font-medium">Interested in joining? Have questions? Send us a message and we'll get back to you shortly.</p>
+</div>
+<form class="space-y-4">
+<div>
+<label class="block text-xs font-bold text-forest/70 uppercase tracking-widest mb-2 px-1">Full Name</label>
+<input class="w-full bg-white border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-forest placeholder:text-forest/30" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-forest/70 uppercase tracking-widest mb-2 px-1">Email Address</label>
+<input class="w-full bg-white border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-forest placeholder:text-forest/30" placeholder="john@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold text-forest/70 uppercase tracking-widest mb-2 px-1">Message</label>
+<textarea class="w-full bg-white border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-forest placeholder:text-forest/30" placeholder="Tell us about your interest in scouting..." rows="4"></textarea>
+</div>
+<button class="w-full bg-forest text-white font-bold py-4 rounded-xl hover:bg-forest/90 transition-all flex items-center justify-center gap-2">
+                            Send Message <span class="material-symbols-outlined text-primary">send</span>
+</button>
+</form>
+<div class="mt-8 pt-8 border-t border-forest/10 flex items-center gap-4">
+<div class="size-12 bg-primary/20 rounded-full flex items-center justify-center text-forest">
+<span class="material-symbols-outlined">help_center</span>
+</div>
+<div>
+<p class="text-sm font-bold text-forest">Need immediate help?</p>
+<p class="text-sm text-forest/60">Visit our FAQ in the Resources section.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-forest text-white pt-20 pb-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Branding -->
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<div class="bg-primary text-forest p-1 rounded-lg">
+<span class="material-symbols-outlined font-bold">explore</span>
+</div>
+<h2 class="text-xl font-bold">Troop 93</h2>
+</div>
+<p class="text-white/60 leading-relaxed text-sm">
+                        Scouting is more than just camping. It's about personal growth, community service, and discovering what it means to be a leader.
+                    </p>
+<div class="flex items-center gap-4">
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-forest transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-forest transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+<!-- Location -->
+<div>
+<h3 class="text-white text-lg font-bold mb-6">Our Location</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p class="text-white/60 text-sm">Community Center Hall<br/>123 Scout Way, Forest Park, CA</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">event_available</span>
+<p class="text-white/60 text-sm">Every Tuesday at 7:00 PM</p>
+</div>
+</div>
+</div>
+<!-- Member Access -->
+<div>
+<h3 class="text-white text-lg font-bold mb-6">Members Only</h3>
+<ul class="space-y-4">
+<li>
+<a class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-3 rounded-lg hover:border-primary transition-all w-full" href="#">
+<span class="material-symbols-outlined text-primary">login</span>
+<span class="text-sm font-bold">Member Portal (TWH)</span>
+</a>
+</li>
+<li><a class="text-white/60 text-sm hover:text-primary" href="#">Medical Forms</a></li>
+<li><a class="text-white/60 text-sm hover:text-primary" href="#">Advancement Tracker</a></li>
+</ul>
+</div>
+<!-- History Badge -->
+<div class="flex flex-col items-start lg:items-end justify-start">
+<div class="bg-primary/10 border border-primary/30 p-6 rounded-2xl inline-block">
+<span class="text-primary text-4xl font-black block mb-1">1922</span>
+<span class="text-white text-xs font-bold uppercase tracking-widest block opacity-70">Established Year</span>
+</div>
+<p class="text-white/40 text-xs mt-6 lg:text-right">
+                        BSA Scout Troop 93<br/>Golden Empire Council
+                    </p>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-white/40 text-xs">© 2024 BSA Troop 93. All rights reserved.</p>
+<div class="flex items-center gap-6">
+<a class="text-white/40 text-xs hover:text-white" href="#">Privacy Policy</a>
+<a class="text-white/40 text-xs hover:text-white" href="#">Terms of Use</a>
+<a class="text-white/40 text-xs hover:text-white" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
