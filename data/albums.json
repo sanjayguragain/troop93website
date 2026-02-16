@@ -1,0 +1,23 @@
+[
+  {
+    "id": "placeholder-1",
+    "title": "Summer Camp 2023",
+    "productUrl": "https://photos.google.com/album/placeholder1",
+    "coverPhotoBaseUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBYW7tShodu90i84d_1T0wifiQwo-d18Nb1VMtO-C-7nz22IAQczxNHiBYawP8EGY_wDX13FBjtVC8xX87zlJIVIse9qU0EDm7PGIT1KUx_OMVCseUKiHbP_lQCpXonRjTcqbvmoFh6Rk-qPVgFSTClY22Tn2chCT0kQ63Psw-Ewe42ldeg8EDsSPd1RpBIyQ981HhFRUBXrQ6e0MfKgZzbHqiOA0mIH1md6NbFR6HI94SgU9u3SpPBCShpqPBafHXdooy3BAKL0nE",
+    "mediaItemsCount": "42"
+  },
+  {
+    "id": "placeholder-2",
+    "title": "Philmont Trek",
+    "productUrl": "https://photos.google.com/album/placeholder2",
+    "coverPhotoBaseUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDpfvu_TQ8xLcoPEU056mtELfCQtAbC9sSD8QCWi7_0AcsvpoefJnj9zot27yBmIO50BJUh_-kLwwcI2vcIJQNkVQ2kZzMp3F9b0aTsVhjqpoJ5DnfJwrTkyjPSlF25CIhL5CWWpdkUAVFwXuPYRRhqEyuM8ZZKdDUd5m3bXMVrGoyPgGJ7aIsLv127OhHDUiUrYYWYzlmPDU_7CylM_NtoMm2qLV2UxdpyYP6tadlLy4SzN3DnjOdWx5txpGkxF3v4BtkkVJsPpig",
+    "mediaItemsCount": "150"
+  },
+  {
+      "id": "placeholder-3",
+      "title": "Court of Honor",
+      "productUrl": "https://photos.google.com/album/placeholder3",
+      "coverPhotoBaseUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBwwIn1OJFlcyldhS5jVX5hIRwfnzQb9pK-4meehjQXfD4TnTny4qM5_lBOTMevBvXhwiyJYd81RkkMIIk8e4Y_gXXhUMGFP7mPIU37lbUQg6vDC32hWsp5rmLWMkzpo51_PumLrG_aUukEJ7G8uEMfiXRsmU6A2D-gFTauMrrbAvWVRlTmiv9oXXYEMIQ3LNRzCjCxV2IbefCEdeJnZDT80pxKDUFxRrXCaU2sqa3z_1aA56xfyDX52DAOW3DkeBbeoTSYpfK1D2s",
+      "mediaItemsCount": "35"
+  }
+]

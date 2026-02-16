@@ -29,14 +29,14 @@
     <!-- Header -->
     <header id="main-header">
         <div class="container flex items-center justify-between" style="height: 5rem;">
-            <div class="flex items-center gap-3">
+            <a href="index.html" class="flex items-center gap-3" style="text-decoration: none; color: inherit;">
                 <div
                     style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                     <img src="assets/images/troop93_logo.png" alt="Troop 93 Logo"
                         style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <h2 style="font-size: 1.25rem; font-weight: 800; letter-spacing: -0.025em;">Troop 93</h2>
-            </div>
+            </a>
 
             <nav class="hidden md-flex items-center gap-8">
                 <a href="index.html" class="nav-link">Home</a>
@@ -44,7 +44,7 @@
                 <a href="leadership.html" class="nav-link">Leadership</a>
                 <a href="eagles.html" class="nav-link">Eagle Scouts</a>
                 <a href="gallery.html" class="nav-link">Gallery</a>
-                <a href="resources.html" class="nav-link" style="color: var(--primary);">Resources</a>
+                <a href="resources.html" class="nav-link" style="color: var(--moss); font-weight: 800;">Resources</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
 
@@ -79,7 +79,7 @@
     <main class="container" style="padding-bottom: 6rem;">
 
         <!-- Categories Grid -->
-        <div class="grid md-grid-cols-3 gap-6"
+        <div class="grid md-grid-cols-2 gap-6"
             style="margin-bottom: 4rem; margin-top: -1.5rem; position: relative; z-index: 20;">
             <!-- 10 Essentials Card -->
             <div class="card" style="padding: 1.75rem; text-align: center;">
@@ -120,12 +120,29 @@
                     <span class="material-symbols-outlined"
                         style="font-size: 1.75rem; font-variation-settings: 'FILL' 1;">verified</span>
                 </div>
-                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Merit Badge Info</h3>
-                <p style="color: var(--slate-500); font-size: 0.8125rem; margin-bottom: 1.5rem; line-height: 1.5;">Blue
-                    cards and digital workbooks for advancement.</p>
+                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Join Troop 93</h3>
+                <p style="color: var(--slate-500); font-size: 0.8125rem; margin-bottom: 1.5rem; line-height: 1.5;">
+                    Adventure
+                    awaits! Learn how to become a member of Troop 93.</p>
                 <a href="resources/join-bsa.html"
                     style="color: var(--primary); font-weight: 700; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.4rem;">
                     Join the Adventure <span class="material-symbols-outlined"
+                        style="font-size: 1.125rem;">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Volunteer Discounts Card -->
+            <div class="card" style="padding: 1.75rem; text-align: center;">
+                <div
+                    style="width: 3.5rem; height: 3.5rem; background: rgba(17,212,17,0.1); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: var(--primary); margin: 0 auto 1.5rem;">
+                    <span class="material-symbols-outlined"
+                        style="font-size: 1.75rem; font-variation-settings: 'FILL' 1;">savings</span>
+                </div>
+                <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;">Volunteer Discounts</h3>
+                <p style="color: var(--slate-500); font-size: 0.8125rem; margin-bottom: 1.5rem; line-height: 1.5;">
+                    Exclusive pro deals and gear discounts for registered volunteers.</p>
+                <a href="resources/volunteer-gear-discounts.html"
+                    style="color: var(--primary); font-weight: 700; font-size: 0.8125rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    View Discounts <span class="material-symbols-outlined"
                         style="font-size: 1.125rem;">arrow_forward</span>
                 </a>
             </div>
@@ -136,62 +153,121 @@
             <div class="flex items-center justify-between" style="margin-bottom: 2rem;">
                 <div class="flex items-center gap-3">
                     <div style="height: 1.5rem; width: 0.3rem; background: var(--primary); border-radius: 1rem;"></div>
-                    <h2 style="font-size: 1.5rem;">Latest Documents</h2>
+                    <h2 style="font-size: 1.5rem;">Forms & Documents</h2>
                 </div>
-                <a href="#"
-                    style="color: var(--primary); font-weight: 700; font-size: 0.8125rem; display: flex; align-items: center; gap: 0.2rem;">
-                    View All <span class="material-symbols-outlined" style="font-size: 1.125rem;">arrow_forward</span>
-                </a>
             </div>
 
-            <div class="flex flex-col gap-3">
-                <!-- Item 1 -->
-                <div class="card flex flex-col md-flex-row items-center justify-between" style="padding: 1rem 2rem;">
-                    <div class="flex items-center gap-5">
+            <div class="grid md-grid-cols-2 gap-4">
+                <!-- Annual Health & Medical Record -->
+                <div class="card flex items-center justify-between" style="padding: 1rem 1.5rem;">
+                    <div class="flex items-center gap-4">
                         <div
-                            style="width: 3rem; height: 3rem; background: #fee2e2; color: #ef4444; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center;">
-                            <span class="material-symbols-outlined" style="font-size: 1.75rem;">picture_as_pdf</span>
+                            style="width: 2.5rem; height: 2.5rem; background: #fee2e2; color: #ef4444; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span class="material-symbols-outlined" style="font-size: 1.5rem;">picture_as_pdf</span>
                         </div>
                         <div>
-                            <h4 style="font-size: 1rem; margin-bottom: 0.15rem;">Annual Health & Medical Record</h4>
-                            <p
-                                style="font-size: 0.7rem; color: var(--slate-500); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 800;">
-                                Parts A, B, & C</p>
+                            <h4 style="font-size: 0.9375rem; margin-bottom: 0.1rem;">Annual Health & Medical Record</h4>
+                            <p style="font-size: 0.75rem; color: var(--slate-500);">Parts A, B, & C</p>
                         </div>
                     </div>
-                    <div class="flex items-center gap-10">
-                        <div style="text-align: right;" class="hidden md-flex flex-col">
-                            <span
-                                style="font-size: 0.6rem; color: var(--primary); font-weight: 800; opacity: 0.8;">UPDATED</span>
-                            <span style="font-size: 0.8125rem; font-weight: 700;">May 12, 2024</span>
-                        </div>
-                        <a href="#" class="btn-primary"
-                            style="padding: 0.6rem 1.25rem; font-size: 0.8125rem;">Download</a>
-                    </div>
+                    <a href="assets/Annual_Health_Medical_Record_ABC.pdf" target="_blank" class="btn-primary"
+                        style="padding: 0.5rem 1rem; font-size: 0.75rem;">Download</a>
                 </div>
-                <!-- Item 2 -->
-                <div class="card flex flex-col md-flex-row items-center justify-between" style="padding: 1rem 2rem;">
-                    <div class="flex items-center gap-5">
+
+                <!-- Adult Personal Data Form -->
+                <div class="card flex items-center justify-between" style="padding: 1rem 1.5rem;">
+                    <div class="flex items-center gap-4">
                         <div
-                            style="width: 3rem; height: 3rem; background: #e0f2fe; color: #0284c7; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center;">
-                            <span class="material-symbols-outlined" style="font-size: 1.75rem;">description</span>
+                            style="width: 2.5rem; height: 2.5rem; background: #fee2e2; color: #ef4444; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span class="material-symbols-outlined" style="font-size: 1.5rem;">picture_as_pdf</span>
                         </div>
                         <div>
-                            <h4 style="font-size: 1rem; margin-bottom: 0.15rem;">Weekend Trip Packing List</h4>
-                            <p
-                                style="font-size: 0.7rem; color: var(--slate-500); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 800;">
-                                Standard gear list</p>
+                            <h4 style="font-size: 0.9375rem; margin-bottom: 0.1rem;">Adult Personal Data Form</h4>
+                            <p style="font-size: 0.75rem; color: var(--slate-500);">For new adult leaders</p>
                         </div>
                     </div>
-                    <div class="flex items-center gap-10">
-                        <div style="text-align: right;" class="hidden md-flex flex-col">
-                            <span
-                                style="font-size: 0.6rem; color: var(--primary); font-weight: 800; opacity: 0.8;">UPDATED</span>
-                            <span style="font-size: 0.8125rem; font-weight: 700;">Jan 20, 2024</span>
+                    <a href="assets/Adult_Personal_Data_Form.pdf" target="_blank" class="btn-primary"
+                        style="padding: 0.5rem 1rem; font-size: 0.75rem;">Download</a>
+                </div>
+
+                <!-- Scout Personal Data Form -->
+                <div class="card flex items-center justify-between" style="padding: 1rem 1.5rem;">
+                    <div class="flex items-center gap-4">
+                        <div
+                            style="width: 2.5rem; height: 2.5rem; background: #fee2e2; color: #ef4444; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span class="material-symbols-outlined" style="font-size: 1.5rem;">picture_as_pdf</span>
                         </div>
-                        <a href="#" class="btn-primary"
-                            style="padding: 0.6rem 1.25rem; font-size: 0.8125rem;">Download</a>
+                        <div>
+                            <h4 style="font-size: 0.9375rem; margin-bottom: 0.1rem;">Scout Personal Data Form</h4>
+                            <p style="font-size: 0.75rem; color: var(--slate-500);">For new scouts</p>
+                        </div>
                     </div>
+                    <a href="assets/Scout_Personal_Data_Form.pdf" target="_blank" class="btn-primary"
+                        style="padding: 0.5rem 1rem; font-size: 0.75rem;">Download</a>
+                </div>
+
+                <!-- Service Hour Form -->
+                <div class="card flex items-center justify-between" style="padding: 1rem 1.5rem;">
+                    <div class="flex items-center gap-4">
+                        <div
+                            style="width: 2.5rem; height: 2.5rem; background: #fee2e2; color: #ef4444; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span class="material-symbols-outlined" style="font-size: 1.5rem;">picture_as_pdf</span>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 0.9375rem; margin-bottom: 0.1rem;">Service Hour Form</h4>
+                            <p style="font-size: 0.75rem; color: var(--slate-500);">Track service hours</p>
+                        </div>
+                    </div>
+                    <a href="assets/Troop_93_Service_Hour_Form.pdf" target="_blank" class="btn-primary"
+                        style="padding: 0.5rem 1rem; font-size: 0.75rem;">Download</a>
+                </div>
+
+                <!-- Patrol Menu & Duty Roster -->
+                <div class="card flex items-center justify-between" style="padding: 1rem 1.5rem;">
+                    <div class="flex items-center gap-4">
+                        <div
+                            style="width: 2.5rem; height: 2.5rem; background: #fee2e2; color: #ef4444; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span class="material-symbols-outlined" style="font-size: 1.5rem;">picture_as_pdf</span>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 0.9375rem; margin-bottom: 0.1rem;">Patrol Menu & Duty Roster</h4>
+                            <p style="font-size: 0.75rem; color: var(--slate-500);">Campout planning</p>
+                        </div>
+                    </div>
+                    <a href="assets/Patrol_Menu_and_Duty_Roster.pdf" target="_blank" class="btn-primary"
+                        style="padding: 0.5rem 1rem; font-size: 0.75rem;">Download</a>
+                </div>
+
+                <!-- Food Purchasing Instructions -->
+                <div class="card flex items-center justify-between" style="padding: 1rem 1.5rem;">
+                    <div class="flex items-center gap-4">
+                        <div
+                            style="width: 2.5rem; height: 2.5rem; background: #fee2e2; color: #ef4444; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span class="material-symbols-outlined" style="font-size: 1.5rem;">picture_as_pdf</span>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 0.9375rem; margin-bottom: 0.1rem;">Food Purchasing Instructions</h4>
+                            <p style="font-size: 0.75rem; color: var(--slate-500);">Grubmaster guide</p>
+                        </div>
+                    </div>
+                    <a href="assets/Food_Purchasing_Instructions.pdf" target="_blank" class="btn-primary"
+                        style="padding: 0.5rem 1rem; font-size: 0.75rem;">Download</a>
+                </div>
+
+                <!-- Packing List (HTML) -->
+                <div class="card flex items-center justify-between" style="padding: 1rem 1.5rem;">
+                    <div class="flex items-center gap-4">
+                        <div
+                            style="width: 2.5rem; height: 2.5rem; background: #e0f2fe; color: #0284c7; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span class="material-symbols-outlined" style="font-size: 1.5rem;">description</span>
+                        </div>
+                        <div>
+                            <h4 style="font-size: 0.9375rem; margin-bottom: 0.1rem;">Weekend Trip Packing List</h4>
+                            <p style="font-size: 0.75rem; color: var(--slate-500);">Standard gear list</p>
+                        </div>
+                    </div>
+                    <a href="resources/packing-list.html" class="btn-primary"
+                        style="padding: 0.5rem 1rem; font-size: 0.75rem;">View List</a>
                 </div>
             </div>
         </section>
@@ -233,6 +309,10 @@
                         Scouting is more than just camping. It's about personal growth, community service, and
                         discovering what it means to be a leader.
                     </p>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.875rem; line-height: 1.6; margin-top: 1rem;">
+                        We meet every Tuesday evening. Prospective scouts and their families are always welcome to
+                        observe a meeting.
+                    </p>
                 </div>
 
                 <div>
@@ -241,7 +321,10 @@
                         <div class="flex items-start gap-3">
                             <span class="material-symbols-outlined"
                                 style="color: var(--primary); font-size: 1.25rem;">location_on</span>
-                            <p class="footer-link">Kiwanis Youth Park<br>386 W Truslow Ave, Fullerton, CA 92832</p>
+                            <a href="https://www.google.com/maps/place/Kiwanis+Youth+Park+Scout+Troop+93/@33.8670339,-117.9315788,16z/data=!4m6!3m5!1s0x80dd2a05f20e7d2f:0xb55b974375d687c4!8m2!3d33.867123!4d-117.9320613!16s%2Fg%2F1tscp9pb?entry=ttu&g_ep=EgoyMDI2MDIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank" class="footer-link" style="text-align: left; display: block;">Kiwanis
+                                Youth Park<br>386
+                                W Truslow Ave, Fullerton, CA 92832</a>
                         </div>
                         <div class="flex items-start gap-3">
                             <span class="material-symbols-outlined"
@@ -263,14 +346,6 @@
                 </div>
 
                 <div style="text-align: right;">
-                    <div
-                        style="background-color: rgba(17,212,17,0.1); border: 1px solid rgba(17,212,17,0.3); padding: 1.5rem; border-radius: 1rem; display: inline-block;">
-                        <span
-                            style="color: var(--primary); font-size: 2.25rem; font-weight: 900; display: block;">1922</span>
-                        <span
-                            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7;">Established
-                            Year</span>
-                    </div>
                 </div>
             </div>
 

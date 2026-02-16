@@ -25,14 +25,14 @@
     <!-- Header -->
     <header id="main-header">
         <div class="container flex items-center justify-between" style="height: 5rem;">
-            <div class="flex items-center gap-3">
+            <a href="../index.html" class="flex items-center gap-3" style="text-decoration: none; color: inherit;">
                 <div
                     style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                     <img src="../assets/images/troop93_logo.png" alt="Troop 93 Logo"
                         style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <h2 style="font-size: 1.25rem; font-weight: 800; letter-spacing: -0.025em;">Troop 93</h2>
-            </div>
+            </a>
 
             <nav class="hidden md-flex items-center gap-8">
                 <a href="../index.html" class="nav-link">Home</a>
@@ -40,7 +40,7 @@
                 <a href="../leadership.html" class="nav-link">Leadership</a>
                 <a href="../eagles.html" class="nav-link">Eagle Scouts</a>
                 <a href="../gallery.html" class="nav-link">Gallery</a>
-                <a href="../resources.html" class="nav-link" style="color: var(--primary);">Resources</a>
+                <a href="../resources.html" class="nav-link" style="color: var(--moss); font-weight: 800;">Resources</a>
                 <a href="../contact.html" class="nav-link">Contact</a>
             </nav>
 
@@ -74,114 +74,205 @@
             </p>
         </div>
 
-        <div class="grid md-grid-cols-2 gap-12">
-            <!-- Gear Categories -->
-            <div class="flex flex-col gap-8">
-                <!-- Large Gear -->
-                <div>
-                    <h3
-                        style="font-size: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="material-symbols-outlined" style="color: var(--primary);">backpack</span>
-                        Essential Gear
-                    </h3>
-                    <ul class="flex flex-col gap-3" style="color: var(--slate-600); font-size: 0.9375rem;">
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span>
-                            Backpack or Duffel Bag</li>
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span>
-                            Sleeping Bag (rated for weather)</li>
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span>
-                            Sleeping Pad</li>
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span> Pillow
-                            (compact)</li>
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span> Mess
-                            Kit (Plate, bowl, cup, spork)</li>
-                    </ul>
-                </div>
+        <!-- Packing List Grid -->
+        <div class="grid md-grid-cols-2 lg-grid-cols-3 gap-8" style="margin-bottom: 4rem;">
 
-                <!-- Clothing -->
-                <div>
-                    <h3
-                        style="font-size: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="material-symbols-outlined" style="color: var(--primary);">checkroom</span>
-                        Clothing
-                    </h3>
-                    <ul class="flex flex-col gap-3" style="color: var(--slate-600); font-size: 0.9375rem;">
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span> Class
-                            A Uniform</li>
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span> Class
-                            B T-shirt</li>
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span> Hiking
-                            Boots & Camp Shoes</li>
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span>
-                            Moisture-wicking Socks (extra pairs!)</li>
-                        <li class="flex items-center gap-3"><span class="material-symbols-outlined"
-                                style="font-size: 1.25rem; color: var(--primary);">check_box_outline_blank</span> Warm
-                            Layers (Fleece, Jacket)</li>
-                    </ul>
-                </div>
+            <!-- Category: Clothing -->
+            <div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span class="material-symbols-outlined" style="color: var(--primary);">apparel</span>
+                    Clothing
+                </h3>
+                <ul class="flex flex-col gap-3" style="color: var(--slate-600); font-size: 0.9375rem;">
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Underwear (at least 2 pairs)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Socks (3-4 pairs)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Pants or Shorts (2+ pairs, weather dependent)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Shirts (2-3, check weather)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Sweater/Sweatshirt</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Cold Weather Base Layer (if needed)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Hat (Required outdoors)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Appropriate Sleepwear</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Hiking Boots, Sneakers or Both</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Winter Hat/Gloves (if needed)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span><strong>Rain Gear</strong></span></li>
+                </ul>
             </div>
 
-            <!-- DOs and DONTs -->
-            <div class="flex flex-col gap-6">
-                <!-- DOs -->
-                <div class="card"
-                    style="padding: 2rem; background: rgba(17, 212, 17, 0.03); border: 1px solid rgba(17, 212, 17, 0.1);">
-                    <h3
-                        style="font-size: 1.25rem; margin-bottom: 1.5rem; color: var(--forest); display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="material-symbols-outlined">thumb_up</span>
-                        DO
-                    </h3>
-                    <ul class="flex flex-col gap-4" style="font-size: 0.9375rem;">
+            <!-- Category: Personal Hygiene -->
+            <div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span class="material-symbols-outlined" style="color: var(--primary);">soap</span>
+                    Personal Hygiene
+                </h3>
+                <ul class="flex flex-col gap-3" style="color: var(--slate-600); font-size: 0.9375rem;">
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Toothbrush</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Toothpaste</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Soap</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Towel</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Wash Cloth</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Hairbrush</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Deodorant</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Sunscreen</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Bug Spray</span></li>
+                </ul>
+            </div>
+
+            <!-- Category: Gear -->
+            <div>
+                <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <span class="material-symbols-outlined" style="color: var(--primary);">backpack</span>
+                    Gear
+                </h3>
+                <ul class="flex flex-col gap-3" style="color: var(--slate-600); font-size: 0.9375rem;">
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Tent</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Tarp (under/over tent)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Sleeping Bag</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Extra Blankets (Optional)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Camp Pad, Cot or Air Mattress</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Pillow</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Mess kit (if you have one)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Water Bottle</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Day Bag (backpack/string bag)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Hiking Stick (optional)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Camp Chair or Sit-Upon</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Headlamp or Flashlight (extra batteries)</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Cub/Scout Outdoor Essentials</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>First Aid Kit</span></li>
+                    <li class="flex items-start gap-3"><span class="material-symbols-outlined"
+                            style="font-size: 1.25rem; color: var(--primary); flex-shrink: 0;">check_box_outline_blank</span>
+                        <span>Scout Handbook</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Notes Section -->
+        <div>
+            <div class="card"
+                style="padding: 2.5rem; background: var(--white); border: 1px solid rgba(13, 27, 18, 0.1);">
+                <h3 style="font-size: 1.5rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+                    <span class="material-symbols-outlined" style="color: var(--primary); font-size: 2rem;">info</span>
+                    Important Notes
+                </h3>
+
+                <div class="grid md-grid-cols-2 gap-8">
+                    <ul class="flex flex-col gap-4" style="font-size: 1rem; color: var(--slate-600); line-height: 1.6;">
                         <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined" style="color: #10b981;">check_circle</span>
-                            <span><strong>Pack your own bag:</strong> You need to know where your gear is when it's dark
-                                and cold.</span>
+                            <span class="material-symbols-outlined"
+                                style="color: var(--moss); margin-top: 0.2rem;">priority_high</span>
+                            <span><strong>Medical Forms A & B</strong> must be filled out and turned into the leader
+                                upon arrival Friday evening. They will be returned Sunday.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined" style="color: #10b981;">check_circle</span>
-                            <span><strong>Check the weather:</strong> Adjust your layers based on the latest
-                                forecast.</span>
+                            <span class="material-symbols-outlined"
+                                style="color: var(--moss); margin-top: 0.2rem;">medication</span>
+                            <span><strong>Medications & vitamins</strong> are only to be handled by an adult.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined" style="color: #10b981;">check_circle</span>
-                            <span><strong>Label your gear:</strong> Many scouts have similar items. Use a permanent
-                                marker.</span>
+                            <span class="material-symbols-outlined"
+                                style="color: var(--moss); margin-top: 0.2rem;">backpack</span>
+                            <span><strong>Don't over-pack!</strong> Bring enough to be comfortable, but remember boys
+                                are responsible for carrying their own gear.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined"
+                                style="color: var(--moss); margin-top: 0.2rem;">shopping_bag</span>
+                            <span><strong>Pack in plastic bags labeled with names.</strong> Rolling clothes saves space.
+                                Pack one complete set of clothes per bag for each day.</span>
                         </li>
                     </ul>
-                </div>
 
-                <!-- DONTs -->
-                <div class="card"
-                    style="padding: 2rem; background: rgba(239, 68, 68, 0.03); border: 1px solid rgba(239, 68, 68, 0.1);">
-                    <h3
-                        style="font-size: 1.25rem; margin-bottom: 1.5rem; color: #b91c1c; display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="material-symbols-outlined">thumb_down</span>
-                        DON'T
-                    </h3>
-                    <ul class="flex flex-col gap-4" style="font-size: 0.9375rem;">
+                    <ul class="flex flex-col gap-4" style="font-size: 1rem; color: var(--slate-600); line-height: 1.6;">
                         <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined" style="color: #ef4444;">cancel</span>
-                            <span><strong>No "Smellables" in Tents:</strong> Never keep food, candy, or scented
-                                toiletries in your tent (attracts animals).</span>
+                            <span class="material-symbols-outlined"
+                                style="color: var(--moss); margin-top: 0.2rem;">hiking</span>
+                            <span><strong>Use backpacks or duffel bags.</strong> Rolling suitcases are not conducive to
+                                tent camping.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined" style="color: #ef4444;">cancel</span>
-                            <span><strong>No Electronics:</strong> Focus on the outdoors and your fellow scouts. No
-                                phones or gaming devices.</span>
+                            <span class="material-symbols-outlined"
+                                style="color: var(--moss); margin-top: 0.2rem;">thermostat</span>
+                            <span><strong>Check the weather forecast.</strong> In cool/cold weather, layers are your
+                                friend.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined" style="color: #ef4444;">cancel</span>
-                            <span><strong>No Sheath Knives:</strong> Only folding pocketknives are allowed (with Totin'
-                                Chip).</span>
+                            <span class="material-symbols-outlined"
+                                style="color: var(--moss); margin-top: 0.2rem;">bed</span>
+                            <span><strong>Air mattress warning:</strong> They will be the same temperature as the air
+                                (cold in Spring/Fall). A pad insulates better from the cold ground.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined"
+                                style="color: #ef4444; margin-top: 0.2rem;">no_food</span>
+                            <span><strong>NO FOOD IN TENTS.</strong> Personal snacks must be in an appropriate container
+                                outside the tent. Candy/snacks inside attract bugs and animals.</span>
                         </li>
                     </ul>
                 </div>

@@ -29,14 +29,14 @@
     <!-- Header -->
     <header id="main-header">
         <div class="container flex items-center justify-between" style="height: 5rem;">
-            <div class="flex items-center gap-3">
+            <a href="index.html" class="flex items-center gap-3" style="text-decoration: none; color: inherit;">
                 <div
                     style="width: 2.5rem; height: 2.5rem; display: flex; align-items: center; justify-content: center; overflow: hidden;">
                     <img src="assets/images/troop93_logo.png" alt="Troop 93 Logo"
                         style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <h2 style="font-size: 1.25rem; font-weight: 800; letter-spacing: -0.025em;">Troop 93</h2>
-            </div>
+            </a>
 
             <nav class="hidden md-flex items-center gap-8">
                 <a href="index.html" class="nav-link">Home</a>
@@ -45,7 +45,7 @@
                 <a href="eagles.html" class="nav-link">Eagle Scouts</a>
                 <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="resources.html" class="nav-link">Resources</a>
-                <a href="contact.html" class="nav-link" style="color: var(--primary);">Contact</a>
+                <a href="contact.html" class="nav-link" style="color: var(--moss); font-weight: 800;">Contact</a>
             </nav>
 
             <div class="flex items-center gap-4">
@@ -62,54 +62,20 @@
     <main class="container section-padding" style="padding-top: 10rem;">
         <div class="grid md-grid-cols-2 gap-16">
             <!-- Form Column -->
-            <div>
+            <div class="card" style="padding: 2.5rem;">
                 <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Get in Touch</h1>
                 <p style="color: var(--slate-600); font-size: 1.125rem; margin-bottom: 3rem;">
                     Have questions about the troop? Interested in visiting a meeting? Fill out the form below and one of
                     our leaders will respond to you soon.
                 </p>
 
-                <form action="https://formspree.io/f/your-form-id" method="POST" class="flex flex-col gap-6">
-                    <div class="grid md-grid-cols-2 gap-6">
-                        <div>
-                            <label
-                                style="display: block; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate-500); margin-bottom: 0.5rem;">Scout
-                                Name</label>
-                            <input type="text" name="name" required
-                                style="width: 100%; padding: 1rem; border: 1px solid rgba(13,27,18,0.1); border-radius: 0.75rem; outline: none; background: var(--white);"
-                                placeholder="Alex Scout">
-                        </div>
-                        <div>
-                            <label
-                                style="display: block; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate-500); margin-bottom: 0.5rem;">Parent
-                                Name</label>
-                            <input type="text" name="parent_name"
-                                style="width: 100%; padding: 1rem; border: 1px solid rgba(13,27,18,0.1); border-radius: 0.75rem; outline: none; background: var(--white);"
-                                placeholder="Jane Doe">
-                        </div>
-                    </div>
-                    <div>
-                        <label
-                            style="display: block; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate-500); margin-bottom: 0.5rem;">Email
-                            Address</label>
-                        <input type="email" name="email" required
-                            style="width: 100%; padding: 1rem; border: 1px solid rgba(13,27,18,0.1); border-radius: 0.75rem; outline: none; background: var(--white);"
-                            placeholder="jane@example.com">
-                    </div>
-                    <div>
-                        <label
-                            style="display: block; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--slate-500); margin-bottom: 0.5rem;">Message</label>
-                        <textarea name="message" rows="5" required
-                            style="width: 100%; padding: 1rem; border: 1px solid rgba(13,27,18,0.1); border-radius: 0.75rem; outline: none; background: var(--white); resize: none;"
-                            placeholder="How can we help you?"></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary"
-                        style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%;">
-                        Send Message <span class="material-symbols-outlined" style="font-size: 1.25rem;">send</span>
-                    </button>
-                    <p style="font-size: 0.75rem; color: var(--slate-400); text-align: center;">This form is protected
-                        by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-                </form>
+                <div class="google-form-container" style="width: 100%; overflow: hidden;">
+                    <!-- REPLACE THE SRC URL BELOW WITH YOUR GOOGLE FORM EMBED URL -->
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSfdx0eG2IfPH7T7feWWWAHB0eByCWuSmNK5NHMphio58teszQ/viewform?embedded=true"
+                        width="100%" height="959" frameborder="0" marginheight="0" marginwidth="0"
+                        style="border: none; max-width: 100%;">Loading…</iframe>
+                </div>
             </div>
 
             <!-- Info Column -->
@@ -135,8 +101,11 @@
                             </div>
                             <div>
                                 <p style="font-weight: 700;">Meeting Location</p>
-                                <p style="font-size: 0.875rem; color: var(--slate-500);">Kiwanis Youth Park<br>386 W
-                                    Truslow Ave, Fullerton, CA 92832</p>
+                                <a href="https://www.google.com/maps/place/Kiwanis+Youth+Park+Scout+Troop+93/@33.8670339,-117.9315788,16z/data=!4m6!3m5!1s0x80dd2a05f20e7d2f:0xb55b974375d687c4!8m2!3d33.867123!4d-117.9320613!16s%2Fg%2F1tscp9pb?entry=ttu&g_ep=EgoyMDI2MDIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    style="font-size: 0.875rem; color: var(--primary); text-decoration: underline;">Kiwanis
+                                    Youth Park<br>386 W
+                                    Truslow Ave, Fullerton, CA 92832</a>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
@@ -152,11 +121,7 @@
                     </div>
                 </div>
 
-                <div
-                    style="border-radius: 1.5rem; overflow: hidden; height: 300px; border: 1px solid rgba(13,27,18,0.05);">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUR4BMFJmJep5X07IbhtgsW9O8K6-wHWs00TGpon1E9dBpaRbaCAkKXg2cUgG2d9p9_a6UCrRCV-TfYpUg7Z464VSPDzR0aUCOg_WoQR9i7y3dXOhRyKmg5wfCiUHMFltwcDZMhFhNQYueepY3oEq77IMTuDrpK13r5PdmRMcGiVAcUTQHqv690yI5swYYvSCvZGau0ZgrTav-QD07gPohTVJfavMqAplkYlWBJCLOTB-wMmJJmyVZ3jgNahBNLIHG1gvDX1R4FBU"
-                        style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
+
             </div>
         </div>
     </main>
@@ -174,6 +139,10 @@
                         Scouting is more than just camping. It's about personal growth, community service, and
                         discovering what it means to be a leader.
                     </p>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.875rem; line-height: 1.6; margin-top: 1rem;">
+                        We meet every Tuesday evening. Prospective scouts and their families are always welcome to
+                        observe a meeting.
+                    </p>
                 </div>
 
                 <div>
@@ -182,7 +151,10 @@
                         <div class="flex items-start gap-3">
                             <span class="material-symbols-outlined"
                                 style="color: var(--primary); font-size: 1.25rem;">location_on</span>
-                            <p class="footer-link">Kiwanis Youth Park<br>386 W Truslow Ave, Fullerton, CA 92832</p>
+                            <a href="https://www.google.com/maps/place/Kiwanis+Youth+Park+Scout+Troop+93/@33.8670339,-117.9315788,16z/data=!4m6!3m5!1s0x80dd2a05f20e7d2f:0xb55b974375d687c4!8m2!3d33.867123!4d-117.9320613!16s%2Fg%2F1tscp9pb?entry=ttu&g_ep=EgoyMDI2MDIwOS4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank" class="footer-link" style="text-align: left; display: block;">Kiwanis
+                                Youth Park<br>386
+                                W Truslow Ave, Fullerton, CA 92832</a>
                         </div>
                         <div class="flex items-start gap-3">
                             <span class="material-symbols-outlined"
@@ -204,14 +176,6 @@
                 </div>
 
                 <div style="text-align: right;">
-                    <div
-                        style="background-color: rgba(17,212,17,0.1); border: 1px solid rgba(17,212,17,0.3); padding: 1.5rem; border-radius: 1rem; display: inline-block;">
-                        <span
-                            style="color: var(--primary); font-size: 2.25rem; font-weight: 900; display: block;">1922</span>
-                        <span
-                            style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7;">Established
-                            Year</span>
-                    </div>
                 </div>
             </div>
 
