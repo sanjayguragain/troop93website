@@ -1,0 +1,149 @@
+{
+  "scoutmasters": [
+    {
+      "name": "Craig Tyler",
+      "role": "Scoutmaster"
+    },
+    {
+      "name": "Donovan Anderson",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Chuck Bennett",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Matthew Bonafede",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Kurt Bretz",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Fred Brown",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "William Fritz",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Sanjay Guragain",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Jarod Laub",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "John Leonard",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Tevye Manchan",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Peter Neal",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Brandon Osborne",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Ward Rovira",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Jon Sedlacek",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Michael Swenson",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Eric Thacker",
+      "role": "Asst. Scoutmaster"
+    },
+    {
+      "name": "Jerry Yu",
+      "role": "Asst. Scoutmaster"
+    }
+  ],
+  "committee_leadership": [
+    {
+      "name": "Joe Crawford",
+      "role": "Committee Chairman"
+    },
+    {
+      "name": "Jeffrey Goyer",
+      "role": "Chartered Org. Rep."
+    }
+  ],
+  "committee_members": [
+    {
+      "name": "Larry Bennett",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Chris Buell",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Melissa S Buell",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Deborah Crawford",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Candace Johnson",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Alyssa Kennedy",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Sarah M La Rose",
+      "role": "Committee Member"
+    },
+    {
+      "name": "James Maley",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Linda Maley",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Joshua Nelson",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Tony Phoenix",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Chris A Spitzer",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Linda Stohr Catalino",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Dale Zimmermann",
+      "role": "Committee Member"
+    },
+    {
+      "name": "Dee Dee Zimmermann",
+      "role": "Committee Member"
+    }
+  ],
+  "youth": []
+}

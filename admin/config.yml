@@ -1,7 +1,11 @@
 backend:
   name: github
-  repo: your-username/troop93website # Replaced by user during deployment
+  repo: sanjayguragain/troop93website
   branch: main
+  site_domain: sanjayguragain.github.io/troop93website/
+
+# Enable local backend for local development
+local_backend: true
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
@@ -25,17 +29,66 @@ collections:
           - { label: "Story Section 1", name: "story_1", widget: "markdown" }
           - { label: "Story Section 2", name: "story_2", widget: "markdown" }
 
-  - name: "leadership"
-    label: "Leadership"
-    folder: "data/leadership"
+  - name: "data"
+    label: "Data"
+    files:
+      - name: "leadership"
+        label: "Leadership Team"
+        file: "data/leadership.json"
+        description: "Manage the Leadership Team lists"
+        fields:
+          - label: "Scoutmasters Team"
+            name: "scoutmasters"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string", default: "Asst. Scoutmaster" }
+          
+          - label: "Committee Leadership"
+            name: "committee_leadership"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+
+          - label: "Committee Members"
+            name: "committee_members"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string", default: "Committee Member" }
+
+          - label: "Youth Leadership"
+            name: "youth"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Image (URL or Upload)", name: "image", widget: "image", required: false }
+              - { label: "Eagle Candidate?", name: "eagle_candidate", widget: "boolean", default: false }
+
+      - name: "eagles"
+        label: "Eagle Scouts"
+        file: "data/eagles.json"
+        description: "Manage the Eagle Scout Honor Roll"
+        fields:
+          - label: "Eagle Scouts List"
+            name: "scouts"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Month/Year Achieved", name: "date_display", widget: "string", hint: "e.g., 'Jun 2025'" }
+              - { label: "Class Year", name: "class_year", widget: "string", hint: "e.g., '2025'" }
+
+  - name: "custom_pages"
+    label: "Custom Pages"
+    folder: "content/pages"
     create: true
-    slug: "{{fields.name}}"
+    slug: "{{slug}}"
     fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Role", name: "role", widget: "string" }
-      - { label: "Type", name: "type", widget: "select", options: ["Adult", "Youth"] }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Eagle Candidate", name: "eagle_candidate", widget: "boolean", default: false, required: false }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description/Subtitle", name: "description", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "gallery"
     label: "Gallery"
@@ -58,12 +111,3 @@ collections:
         - { label: "Date Range", name: "date_range", widget: "string" }
         - { label: "Description", name: "description", widget: "text" }
         - { label: "Image", name: "image", widget: "image" }
-
-  - name: "eagle_scouts"
-    label: "Eagle Scouts"
-    folder: "data/eagle_scouts"
-    create: true
-    fields:
-      - { label: "Full Name", name: "title", widget: "string" }
-      - { label: "Year Achieved", name: "year", widget: "number" }
-      - { label: "Eagle Project", name: "project", widget: "text", required: false }

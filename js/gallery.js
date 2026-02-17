@@ -31,13 +31,11 @@ function renderAlbums(albums) {
         const item = document.createElement('div');
         item.className = 'masonry-item';
 
-        // Use the cover photo URL. 
-        // Note: Google Photos Base URLs often need parameters to work well.
-        // w=width, h=height, c=crop. 
-        // Example: url=...=w500-h500-c
-        // For masonry, we usually want width constrained but height flexible or fixed.
-        // Let's just use a reasonable width.
-        const coverUrl = album.coverPhotoBaseUrl ? `${album.coverPhotoBaseUrl}=w600` : 'assets/images/placeholder.jpg';
+        // Check if the URL already has parameters (like =w600-h315-p-k)
+        // If it does, use it as is. Otherwise, append our default sizing.
+        const coverUrl = album.coverPhotoBaseUrl
+            ? (album.coverPhotoBaseUrl.startsWith('assets/') || album.coverPhotoBaseUrl.includes('=') ? album.coverPhotoBaseUrl : `${album.coverPhotoBaseUrl}=w600`)
+            : 'assets/images/placeholder.jpg';
 
         item.innerHTML = `
             <a href="${album.productUrl}" target="_blank" class="photo-card block text-white group" title="${album.title}">

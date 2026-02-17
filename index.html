@@ -21,6 +21,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Decap CMS dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 
 <body>
@@ -65,12 +68,13 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="container" style="position: relative; z-index: 10; max-width: 56rem;">
-            <span
+            <span id="chartered-date"
                 style="color: var(--primary); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.875rem; margin-bottom: 1rem; display: block;">Chartered
                 Since 1922</span>
-            <h1 style="font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 1.5rem;">Welcome to <span
+            <h1 id="hero-title" style="font-size: clamp(2.5rem, 8vw, 4.5rem); margin-bottom: 1.5rem;">Welcome to <span
                     style="color: var(--primary);">Troop 93</span></h1>
-            <p style="font-size: 1.25rem; font-weight: 500; opacity: 0.9; margin-bottom: 2.5rem; line-height: 1.6;">
+            <p id="hero-description"
+                style="font-size: 1.25rem; font-weight: 500; opacity: 0.9; margin-bottom: 2.5rem; line-height: 1.6;">
                 Building the next generation of leaders through adventure, teamwork, and service. Experience the great
                 outdoors with our award-winning scouting program.
             </p>
@@ -86,7 +90,7 @@
         <div class="grid lg-grid-cols-12 gap-8">
 
             <!-- Adventures Column -->
-            <div style="grid-column: span 7 / span 7;">
+            <div style="grid-column: span 7 / span 7; padding-top: 2.5rem;">
                 <div class="flex items-center justify-between"
                     style="border-bottom: 1px solid rgba(13,27,18,0.05); padding-bottom: 1.5rem; margin-bottom: 2rem;">
                     <div>
@@ -107,43 +111,24 @@
             <!-- Sidebar Column -->
             <div style="grid-column: span 5 / span 5;">
                 <div
-                    style="background-color: var(--khaki); border-radius: 1.5rem; padding: 2.5rem; position: sticky; top: 7rem;">
+                    style="background-color: var(--khaki); border-radius: 1.5rem; padding: 2.5rem; position: sticky; top: 7rem; height: 600px; display: flex; flex-direction: column;">
                     <div style="margin-bottom: 2rem;">
-                        <h2 style="font-size: 1.875rem;">Connect With Us</h2>
-                        <p style="opacity: 0.7; margin-top: 0.5rem; font-weight: 500;">Interested in joining? Have
-                            questions? Send us a message.</p>
+                        <h2 style="font-size: 1.875rem;">Our Social Media Pages</h2>
+                        <p style="opacity: 0.7; margin-top: 0.5rem; font-weight: 500;">Follow our latest adventures,
+                            photos, and updates on our social media channels.</p>
                     </div>
 
-                    <form action="https://formspree.io/f/your-form-id" method="POST" class="flex flex-col gap-4">
-                        <div>
-                            <label
-                                style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; opacity: 0.7;">Full
-                                Name</label>
-                            <input type="text" name="name" required
-                                style="width: 100%; padding: 1rem; border: none; border-radius: 0.75rem; outline: none;"
-                                placeholder="Scout Name">
-                        </div>
-                        <div>
-                            <label
-                                style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; opacity: 0.7;">Email
-                                Address</label>
-                            <input type="email" name="email" required
-                                style="width: 100%; padding: 1rem; border: none; border-radius: 0.75rem; outline: none;"
-                                placeholder="parent@email.com">
-                        </div>
-                        <div>
-                            <label
-                                style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; opacity: 0.7;">Message</label>
-                            <textarea name="message" rows="4" required
-                                style="width: 100%; padding: 1rem; border: none; border-radius: 0.75rem; outline: none; resize: none;"
-                                placeholder="Tell us about your interest in scouting..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary"
-                            style="width: 100%; background-color: var(--forest); color: var(--white); display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                            Send Message <span class="material-symbols-outlined"
-                                style="color: var(--primary);">send</span>
-                        </button>
-                    </form>
+                    <div class="flex flex-col gap-4">
+                        <a href="https://www.facebook.com/profile.php?id=100083252353105" target="_blank"
+                            class="btn-primary"
+                            style="width: 100%; background-color: #1877F2; color: var(--white); display: flex; align-items: center; justify-content: center; gap: 0.5rem; border: none; text-decoration: none;">
+                            Follow on Facebook
+                        </a>
+                        <a href="https://www.instagram.com/troop93/" target="_blank" class="btn-primary"
+                            style="width: 100%; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: var(--white); display: flex; align-items: center; justify-content: center; gap: 0.5rem; border: none; text-decoration: none;">
+                            Follow on Instagram
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -218,7 +203,10 @@
 
     <script src="js/config.js"></script>
     <!-- <script src="js/home-events.js"></script> -->
+    <script src="js/config.js"></script>
+    <!-- <script src="js/home-events.js"></script> -->
     <script src="js/main.js"></script>
+    <script src="js/content-loader.js"></script>
 </body>
 
 </html>

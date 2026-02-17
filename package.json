@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cms": "npx decap-server",
+    "dev": "http-server"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,9 @@
   "dependencies": {
     "dotenv": "^17.3.1",
     "googleapis": "^171.4.0"
+  },
+  "devDependencies": {
+    "decap-server": "^3.5.0",
+    "http-server": "^14.1.1"
   }
 }

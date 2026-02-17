@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leadership Team | Troop 93</title>
+    <title>Page | Troop 93 Fullerton</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Meet the adult and youth leadership team guiding Troop 93. Dedicated volunteers and scouts building character and leadership.">
+    <meta name="description" content="Troop 93 Fullerton">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
@@ -23,9 +22,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- CMS Content Loader -->
+    <!-- Decap CMS dependencies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-    <script src="js/content-loader.js?v=2" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
 </head>
 
 <body>
@@ -45,7 +44,7 @@
             <nav class="hidden md-flex items-center gap-8">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
-                <a href="leadership.html" class="nav-link" style="color: var(--moss); font-weight: 800;">Leadership</a>
+                <a href="leadership.html" class="nav-link">Leadership</a>
                 <a href="eagles.html" class="nav-link">Eagle Scouts</a>
                 <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="resources.html" class="nav-link">Resources</a>
@@ -67,12 +66,9 @@
     <section class="section-padding"
         style="padding-top: 10rem; position: relative; overflow: hidden; background: linear-gradient(rgba(17,212,17,0.05), transparent);">
         <div class="container" style="text-align: center; position: relative; z-index: 10;">
-            <h1 style="font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1.5rem;">Guiding the <span
-                    style="color: var(--primary);">Next Generation</span></h1>
-            <p
+            <h1 id="page-title" style="font-size: clamp(2.5rem, 6vw, 4rem); margin-bottom: 1.5rem;">Loading...</h1>
+            <p id="page-description"
                 style="max-width: 42rem; margin: 0 auto; font-size: 1.125rem; color: var(--slate-600); line-height: 1.6;">
-                Meet the dedicated volunteers and scouts who lead Troop 93. Together, we build character, foster
-                leadership, and explore the great outdoors.
             </p>
         </div>
         <div
@@ -80,85 +76,12 @@
         </div>
     </section>
 
-    <!-- Leadership Content -->
-    <main class="container" style="padding-bottom: 8rem;">
-
-        <!-- Scoutmasters & Assistant Scoutmasters -->
-        <section style="margin-bottom: 6rem;">
-            <div class="flex items-center gap-4" style="margin-bottom: 3rem;">
-                <div style="height: 2rem; width: 0.4rem; background: var(--primary); border-radius: 1rem;"></div>
-                <h2 style="font-size: 1.875rem;">Scoutmaster Team</h2>
-            </div>
-
-            <div id="scoutmaster-list" class="grid md-grid-cols-2 lg-grid-cols-4 gap-6">
-                <!-- Content loaded dynamically from data/leadership.json -->
-            </div>
-        </section>
-
-        <!-- Committee Leadership -->
-        <section style="margin-bottom: 6rem;">
-            <div class="flex items-center gap-4" style="margin-bottom: 3rem;">
-                <div style="height: 2rem; width: 0.4rem; background: var(--primary); border-radius: 1rem;"></div>
-                <h2 style="font-size: 1.875rem;">Committee Leadership</h2>
-            </div>
-
-            <div id="committee-leadership-list" class="grid md-grid-cols-2 lg-grid-cols-4 gap-6">
-                <!-- Data loaded dynamically -->
-            </div>
-        </section>
-
-        <!-- Committee Members -->
-        <section style="margin-bottom: 6rem;">
-            <div class="flex items-center gap-4" style="margin-bottom: 3rem;">
-                <div style="height: 2rem; width: 0.4rem; background: var(--primary); border-radius: 1rem;"></div>
-                <h2 style="font-size: 1.875rem;">Committee Members</h2>
-            </div>
-
-            <div id="committee-members-list" class="grid md-grid-cols-2 lg-grid-cols-4 gap-6">
-                <!-- Data loaded dynamically -->
-            </div>
-        </section>
-
-        <!-- Unit Scouter Reserve -->
-        <section style="margin-bottom: 6rem;">
-            <div class="flex items-center gap-4" style="margin-bottom: 2rem;">
-                <div style="height: 1.5rem; width: 0.3rem; background: var(--primary); border-radius: 1rem;"></div>
-                <h2 style="font-size: 1.5rem;">Unit Scouter Reserve</h2>
-            </div>
-            <p style="color: var(--slate-600);">Michael Bergey</p>
-        </section>
-
-        <!-- Youth Leadership -->
-        <section>
-            <div class="flex items-center gap-4" style="margin-bottom: 3rem;">
-                <div style="height: 2rem; width: 0.4rem; background: var(--primary); border-radius: 1rem;"></div>
-                <h2 style="font-size: 1.875rem;">Youth Leadership</h2>
-            </div>
-
-            <div id="youth-leadership-list" class="grid md-grid-cols-2 lg-grid-cols-4 gap-8">
-                <!-- Data loaded dynamically -->
-            </div>
-        </section>
-
-        <section class="section-padding"
-            style="background-color: rgba(17,212,17,0.03); border-radius: 2rem; margin-top: 6rem; text-align: center; border: 1px solid rgba(17,212,17,0.1);">
-            <h2 style="font-size: 2rem; margin-bottom: 1rem;">Interested in Leading?</h2>
-            <p style="color: var(--slate-600); max-width: 32rem; margin: 0 auto 2.5rem;">We are always looking for
-                parents and volunteers to help support our scouts. Reach out to our Committee Chair to learn about open
-                positions.</p>
-            <div class="flex flex-col md-flex-row justify-center gap-4">
-                <a href="contact.html" class="btn-primary"
-                    style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                    <span class="material-icons">contact_mail</span>
-                    Contact Committee
-                </a>
-                <a href="resources.html" class="btn-secondary"
-                    style="background: var(--white); color: var(--forest); border-color: rgba(13,27,18,0.1); display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                    Volunteer Info
-                </a>
-            </div>
-        </section>
-
+    <!-- Main Content -->
+    <main class="container section-padding" style="padding-bottom: 8rem;">
+        <div id="page-body" class="prose"
+            style="max-width: 48rem; margin: 0 auto; line-height: 1.8; color: var(--slate-600);">
+            <!-- Content loaded dynamically based on URL parameter ?id=... -->
+        </div>
     </main>
 
     <!-- Footer -->
@@ -228,6 +151,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/content-loader.js?v=2" defer></script>
 </body>
 
 </html>

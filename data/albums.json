@@ -1,23 +1,56 @@
 [
   {
-    "id": "placeholder-1",
-    "title": "Summer Camp 2023",
-    "productUrl": "https://photos.google.com/album/placeholder1",
-    "coverPhotoBaseUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBYW7tShodu90i84d_1T0wifiQwo-d18Nb1VMtO-C-7nz22IAQczxNHiBYawP8EGY_wDX13FBjtVC8xX87zlJIVIse9qU0EDm7PGIT1KUx_OMVCseUKiHbP_lQCpXonRjTcqbvmoFh6Rk-qPVgFSTClY22Tn2chCT0kQ63Psw-Ewe42ldeg8EDsSPd1RpBIyQ981HhFRUBXrQ6e0MfKgZzbHqiOA0mIH1md6NbFR6HI94SgU9u3SpPBCShpqPBafHXdooy3BAKL0nE",
-    "mediaItemsCount": "42"
+    "title": "2026 Feb Valencia District Dinner",
+    "productUrl": "https://photos.app.goo.gl/gwFr5Z9tD1wTBfDBA",
+    "coverPhotoBaseUrl": "assets/images/albums/2026_feb_valencia_district_dinner.png",
+    "mediaItemsCount": "Photos"
   },
   {
-    "id": "placeholder-2",
-    "title": "Philmont Trek",
-    "productUrl": "https://photos.google.com/album/placeholder2",
-    "coverPhotoBaseUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDpfvu_TQ8xLcoPEU056mtELfCQtAbC9sSD8QCWi7_0AcsvpoefJnj9zot27yBmIO50BJUh_-kLwwcI2vcIJQNkVQ2kZzMp3F9b0aTsVhjqpoJ5DnfJwrTkyjPSlF25CIhL5CWWpdkUAVFwXuPYRRhqEyuM8ZZKdDUd5m3bXMVrGoyPgGJ7aIsLv127OhHDUiUrYYWYzlmPDU_7CylM_NtoMm2qLV2UxdpyYP6tadlLy4SzN3DnjOdWx5txpGkxF3v4BtkkVJsPpig",
-    "mediaItemsCount": "150"
+    "title": "2026 Feb OC BSA Historic Trail",
+    "productUrl": "https://photos.app.goo.gl/6cyipKw4NAbbnTbF7",
+    "coverPhotoBaseUrl": "assets/images/albums/2026_feb_oc_bsa_historic_trail.png",
+    "mediaItemsCount": "Photos"
   },
   {
-      "id": "placeholder-3",
-      "title": "Court of Honor",
-      "productUrl": "https://photos.google.com/album/placeholder3",
-      "coverPhotoBaseUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBwwIn1OJFlcyldhS5jVX5hIRwfnzQb9pK-4meehjQXfD4TnTny4qM5_lBOTMevBvXhwiyJYd81RkkMIIk8e4Y_gXXhUMGFP7mPIU37lbUQg6vDC32hWsp5rmLWMkzpo51_PumLrG_aUukEJ7G8uEMfiXRsmU6A2D-gFTauMrrbAvWVRlTmiv9oXXYEMIQ3LNRzCjCxV2IbefCEdeJnZDT80pxKDUFxRrXCaU2sqa3z_1aA56xfyDX52DAOW3DkeBbeoTSYpfK1D2s",
-      "mediaItemsCount": "35"
+    "title": "2026 Jan Court of Honor",
+    "productUrl": "https://photos.app.goo.gl/Yx2GBuLiEjB9nQXZ8",
+    "coverPhotoBaseUrl": "assets/images/albums/2026_jan_court_of_honor.png",
+    "mediaItemsCount": "Photos"
+  },
+  {
+    "title": "2026 Jan OC Ropes Course",
+    "productUrl": "https://photos.app.goo.gl/oxEJS8ZZQ6RJQLWA8",
+    "coverPhotoBaseUrl": "assets/images/albums/2026_jan_oc_ropes_course.png",
+    "mediaItemsCount": "Photos"
+  },
+  {
+    "title": "2026 Jan 1st Years Scouts",
+    "productUrl": "https://photos.app.goo.gl/59LsLvSQxpX3Rvo19",
+    "coverPhotoBaseUrl": "assets/images/albums/2026_jan_1st_years_scouts.png",
+    "mediaItemsCount": "Photos"
+  },
+  {
+    "title": "2025 Dec Second Harvest Farm",
+    "productUrl": "https://photos.app.goo.gl/nN7RjMJdBAnjyMS16",
+    "coverPhotoBaseUrl": "assets/images/albums/2025_dec_second_harvest_farm.png",
+    "mediaItemsCount": "Photos"
+  },
+  {
+    "title": "2025 Dec Native Plant Restoration",
+    "productUrl": "https://photos.app.goo.gl/21WVUuNBD7VznKCp8",
+    "coverPhotoBaseUrl": "assets/images/albums/2025_dec_native_plant_restoration.png",
+    "mediaItemsCount": "Photos"
+  },
+  {
+    "title": "2025 Nov Scout O Rama",
+    "productUrl": "https://photos.app.goo.gl/9Ht27hfeodCwKtg46",
+    "coverPhotoBaseUrl": "assets/images/albums/2025_nov_scout_o_rama.png",
+    "mediaItemsCount": "Photos"
+  },
+  {
+    "title": "2025 Jul Summer Camp Morrison",
+    "productUrl": "https://photos.app.goo.gl/31RAx1fciBizzg3x7",
+    "coverPhotoBaseUrl": "assets/images/albums/2025_jul_summer_camp_morrison.png",
+    "mediaItemsCount": "Photos"
   }
 ]

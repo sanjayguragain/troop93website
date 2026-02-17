@@ -22,6 +22,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Decap CMS dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 
 <body>
@@ -67,9 +70,9 @@
                     <span
                         style="display: inline-block; background: rgba(17,212,17,0.1); color: var(--primary); border-radius: 2rem; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; padding: 0.5rem 1rem;">Established
                         1922</span>
-                    <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 2rem;">A Century of <br><span
-                            style="color: var(--primary);">Fullerton Heritage.</span></h1>
-                    <div class="flex flex-col gap-6"
+                    <h1 id="title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 2rem;">A Century of
+                        <br><span style="color: var(--primary);">Fullerton Heritage.</span></h1>
+                    <div id="story-1" class="flex flex-col gap-6"
                         style="font-size: 1.125rem; color: var(--slate-600); line-height: 1.7;">
                         <p>
                             At Troop 93, we believe in the core values of Scouting. We are building the leaders of
@@ -86,6 +89,9 @@
                             The outdoor program offers something for everyone, from events designed for first year
                             Scouts to a full High Adventure program for our older and higher ranking Scouts.
                         </p>
+                    </div>
+                    <div id="story-2" class="flex flex-col gap-6"
+                        style="font-size: 1.125rem; color: var(--slate-600); line-height: 1.7; margin-top: 1.5rem;">
                         <p>
                             Leadership skills are developed through the use of the Patrol Method and the Patrol Leaders
                             Council (monthly planning meeting incorporating the patrol leaders with adult guidance).
@@ -228,6 +234,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/content-loader.js"></script>
 </body>
 
 </html>
