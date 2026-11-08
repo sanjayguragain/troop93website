@@ -21,8 +21,11 @@ test('shared navigation and footer render on every regular page with correct cur
         assert.match(html, /aria-expanded="false"/);
         const section = file.startsWith('resources/') ? 'resources.html' : file;
         const currentLinks = [...html.matchAll(/<a\b[^>]*aria-current="page"[^>]*>/g)];
-        assert.equal(currentLinks.length, file === 'page.html' ? 0 : 1, file);
+        assert.equal(currentLinks.length, ['page.html', 'join.html'].includes(file) ? 0 : 1, file);
         if (currentLinks.length) assert.ok(currentLinks[0][0].includes(section), file);
+        const navigation = html.match(/<nav\b[^>]*id="site-navigation"[\s\S]*?<\/nav>/)?.[0];
+        assert.ok(navigation, file);
+        assert.doesNotMatch(navigation, /join\.html|Join the Troop/);
         const footer = html.split('<footer>')[1];
         assert.match(footer, /facebook\.com/);
         assert.match(footer, /instagram\.com/);
