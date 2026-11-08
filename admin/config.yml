@@ -76,7 +76,7 @@ collections:
             name: "scouts"
             widget: "list"
             fields:
-              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Name", name: "name", widget: "string", hint: "First name and last initial only, e.g., 'Tej M.'. Do not enter full last names." }
               - { label: "Month/Year Achieved", name: "date_display", widget: "string", hint: "e.g., 'Jun 2025'" }
               - { label: "Class Year", name: "class_year", widget: "string", hint: "e.g., '2025'" }
 
