@@ -1,5 +1,5 @@
 ---
 hero_title: "Welcome to Troop 93"
-hero_description: "Building the next generation of leaders through adventure, teamwork, and service. Experience the great outdoors with our award-winning scouting program."
+hero_description: "A scout-led troop in Fullerton, building confidence through outdoor adventure, practical skills, and service. From first campouts to backcountry treks, there is room to grow in Troop 93."
 chartered_date: "Chartered Since 1922"
 ---

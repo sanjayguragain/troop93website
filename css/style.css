@@ -468,6 +468,178 @@ header.scrolled {
     }
 }
 
+/* Program information and new-family guidance */
+.content-section {
+    margin-top: 4rem;
+    scroll-margin-top: 7rem;
+}
+
+.content-intro {
+    max-width: 48rem;
+    margin-bottom: 2rem;
+}
+
+.content-intro h2 {
+    margin-bottom: 1.25rem;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    letter-spacing: -0.025em;
+}
+
+.content-intro p,
+.content-card p,
+.program-steps p,
+.content-note p,
+.family-faq .details-content p {
+    color: var(--slate-600);
+    line-height: 1.8;
+}
+
+.content-intro p + p,
+.content-card p + p,
+.family-faq .details-content p + p {
+    margin-top: 1rem;
+}
+
+.content-link {
+    color: var(--moss-dark);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.content-intro > .content-link,
+.content-card > .content-link,
+.content-intro > .btn-primary {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.content-link:hover {
+    color: var(--forest);
+}
+
+.program-overview,
+.visit-preview {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3rem;
+    align-items: start;
+}
+
+.program-steps {
+    list-style: none;
+    counter-reset: program-step;
+    padding: 2rem;
+    background: var(--khaki);
+    border-radius: 1.5rem;
+}
+
+.program-steps li {
+    position: relative;
+    padding-left: 3rem;
+    counter-increment: program-step;
+}
+
+.program-steps li + li {
+    margin-top: 2rem;
+}
+
+.program-steps li::before {
+    content: counter(program-step);
+    position: absolute;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: var(--moss-dark);
+    background: var(--primary-light);
+    font-weight: 800;
+}
+
+.content-card h3,
+.program-steps h3,
+.visit-resources h3,
+.content-note h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+.content-card {
+    padding: 2rem;
+}
+
+.visit-preview {
+    border-top: 1px solid rgba(13, 27, 18, 0.1);
+    padding-top: 3rem;
+}
+
+.visit-resources {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.about-program {
+    margin-bottom: 5rem;
+}
+
+.content-note {
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    border-left: 4px solid var(--moss);
+    border-radius: 0 1rem 1rem 0;
+    background: var(--khaki);
+}
+
+.family-faq {
+    max-width: 56rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.family-faq details + details {
+    margin-top: 1rem;
+}
+
+.family-faq summary {
+    line-height: 1.5;
+}
+
+.family-faq summary::after {
+    content: '+';
+    margin-left: auto;
+    padding-left: 0.75rem;
+    color: var(--moss-dark);
+}
+
+.family-faq details[open] summary::after {
+    content: '−';
+}
+
+@media (max-width: 767px) {
+    .program-overview,
+    .visit-preview {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .content-section {
+        margin-top: 3rem;
+    }
+
+    .content-card,
+    .program-steps,
+    .content-note,
+    .visit-resources {
+        padding: 1.5rem;
+    }
+}
+
 /* Footer */
 footer {
     background-color: var(--forest);
