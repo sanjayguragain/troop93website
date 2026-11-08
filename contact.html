@@ -8,7 +8,7 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Reach out to Troop 93 Fullerton. Interested in joining? Have questions? Send us a message and we'll get back to you shortly.">
+        content="Contact Troop 93 in Fullerton, find our meeting location, and learn what to expect when visiting the troop.">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
@@ -61,71 +61,105 @@
         </div>
     </header>
 
-    <main class="container section-padding" style="padding-top: 10rem;">
-        <div class="grid md-grid-cols-2 gap-16">
-            <!-- Form Column -->
-            <div class="card" style="padding: 2.5rem;">
-                <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Get in Touch</h1>
-                <p style="color: var(--slate-600); font-size: 1.125rem; margin-bottom: 3rem;">
-                    Have questions about the troop? Interested in visiting a meeting? Fill out the form below and one of
-                    our leaders will respond to you soon.
-                </p>
-
-                <div class="google-form-container" style="width: 100%; overflow: hidden;">
-                    <!-- REPLACE THE SRC URL BELOW WITH YOUR GOOGLE FORM EMBED URL -->
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSfdx0eG2IfPH7T7feWWWAHB0eByCWuSmNK5NHMphio58teszQ/viewform?embedded=true"
-                        width="100%" height="959" frameborder="0" marginheight="0" marginwidth="0"
-                        style="border: none; max-width: 100%;">Loading…</iframe>
-                </div>
-            </div>
-
-            <!-- Info Column -->
-            <div class="flex flex-col gap-8">
-                <div class="card" style="padding: 2.5rem; border-color: rgba(17,212,17,0.1);">
-                    <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">Contact Information</h3>
-                    <div class="flex flex-col gap-6">
-                        <div class="flex items-start gap-4">
-                            <div
-                                style="width: 2.5rem; height: 2.5rem; background: rgba(17,212,17,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0;">
-                                <span class="material-icons" style="font-size: 1.25rem;">email</span>
-                            </div>
-                            <div>
-                                <p style="font-weight: 700;">Email Us</p>
-                                <a href="mailto:info@troop93.com"
-                                    style="font-size: 0.875rem; color: var(--slate-500);">info@troop93.com</a>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div
-                                style="width: 2.5rem; height: 2.5rem; background: rgba(17,212,17,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0;">
-                                <span class="material-icons" style="font-size: 1.25rem;">place</span>
-                            </div>
-                            <div>
-                                <p style="font-weight: 700;">Meeting Location</p>
-                                <a href="https://www.google.com/maps/place/Kiwanis+Youth+Park+Scout+Troop+93/@33.8670339,-117.9315788,16z/data=!4m6!3m5!1s0x80dd2a05f20e7d2f:0xb55b974375d687c4!8m2!3d33.867123!4d-117.9320613!16s%2Fg%2F1tscp9pb?entry=ttu&g_ep=EgoyMDI2MDIwOS4wIKXMDSoASAFQAw%3D%3D"
-                                    target="_blank"
-                                    style="font-size: 0.875rem; color: var(--primary); text-decoration: underline;">Kiwanis
-                                    Youth Park<br>386 W
-                                    Truslow Ave, Fullerton, CA 92832</a>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-4">
-                            <div
-                                style="width: 2.5rem; height: 2.5rem; background: rgba(17,212,17,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0;">
-                                <span class="material-icons" style="font-size: 1.25rem;">event</span>
-                            </div>
-                            <div>
-                                <p style="font-weight: 700;">Meeting Time</p>
-                                <p style="font-size: 0.875rem; color: var(--slate-500);">Every Tuesday at 7:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
+    <main class="container contact-main">
+        <div class="content-intro contact-intro">
+            <span class="activities-eyebrow">Meet the troop</span>
+            <h1>Let's talk about your next adventure</h1>
+            <p>Curious about scouting in Fullerton? Whether your family is exploring scouting for the first time
+                or looking for a new troop, we would like to hear from you. Email us to ask questions or arrange
+                a meeting visit.</p>
         </div>
+
+        <section class="contact-location-grid" aria-label="Contact and meeting location">
+            <div class="card contact-info-card">
+                <h2>Get in touch</h2>
+                <p>The best place to start is a conversation. Tell us what interests your scout and what you would
+                    like to learn about Troop 93.</p>
+                <dl class="contact-facts">
+                    <div>
+                        <dt><span class="material-symbols-outlined" aria-hidden="true">mail</span> Email the troop</dt>
+                        <dd><a class="content-link" href="mailto:info@troop93.com">info@troop93.com</a></dd>
+                    </div>
+                    <div>
+                        <dt><span class="material-symbols-outlined" aria-hidden="true">location_on</span> Meeting location</dt>
+                        <dd><address>Kiwanis Youth Park<br>386 W Truslow Ave<br>Fullerton, CA 92832</address></dd>
+                    </div>
+                    <div>
+                        <dt><span class="material-symbols-outlined" aria-hidden="true">schedule</span> Regular meeting time</dt>
+                        <dd>Tuesdays at 7:00 PM</dd>
+                    </div>
+                </dl>
+                <p class="contact-visit-note">Please email before your first visit so we can confirm a suitable
+                    meeting and help you know what to expect.</p>
+                <a href="mailto:info@troop93.com" class="btn-primary">Email Troop 93</a>
+            </div>
+
+            <div class="card contact-map-card">
+                <div class="contact-map-heading">
+                    <h2>Find our meeting place</h2>
+                    <p>Kiwanis Youth Park in Fullerton</p>
+                </div>
+                <iframe
+                    title="Map showing Kiwanis Youth Park at 386 W Truslow Ave, Fullerton, California"
+                    src="https://maps.google.com/maps?q=Kiwanis%20Youth%20Park%2C%20386%20W%20Truslow%20Ave%2C%20Fullerton%2C%20CA%2092832&amp;z=16&amp;output=embed"
+                    width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen></iframe>
+                <div class="contact-map-directions">
+                    <a class="content-link"
+                        href="https://www.google.com/maps/dir/?api=1&amp;destination=Kiwanis%20Youth%20Park%2C%20386%20W%20Truslow%20Ave%2C%20Fullerton%2C%20CA%2092832"
+                        target="_blank" rel="noopener noreferrer">Get directions in Google Maps <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" aria-labelledby="first-visit-title">
+            <div class="content-intro">
+                <span class="activities-eyebrow">For prospective scouts and families</span>
+                <h2 id="first-visit-title">Make the most of your first visit</h2>
+                <p>Seeing a meeting is a useful way to understand a scout-led troop. You can meet the people,
+                    see how scouts work together, and ask the questions that matter to your family.</p>
+            </div>
+            <div class="grid md-grid-cols-3 gap-6">
+                <article class="card content-card">
+                    <h3>Before you come</h3>
+                    <p>Email to introduce your family and arrange a visit. Let us know whether your scout is new
+                        to scouting, coming from a Cub Scout pack, or transferring from another troop.</p>
+                    <p>You can also tell us which parts of the program interest you, such as camping, service,
+                        outdoor skills, or leadership.</p>
+                </article>
+                <article class="card content-card">
+                    <h3>While you are here</h3>
+                    <p>Meet scouts and adult leaders and see how a troop meeting works. Ask about patrols,
+                        first-year activities, and how new scouts learn the skills to get outdoors.</p>
+                    <p>Bring your questions about family involvement, equipment, costs, and fitting scouting
+                        around school and other commitments.</p>
+                </article>
+                <article class="card content-card">
+                    <h3>When you are ready</h3>
+                    <p>Talk with leaders about current registration requirements and next steps. Ask what your
+                        scout needs to get started before purchasing uniforms or camping equipment.</p>
+                    <p>Our <a class="content-link" href="join.html#family-questions">new-family questions</a>
+                        cover common topics to help you prepare for that conversation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section contact-more-grid" aria-label="Other ways to connect with the troop">
+            <div class="content-note">
+                <h2>Community connections</h2>
+                <p>Have a service project idea, a skill to share, or a question about helping the troop? Email
+                    a short introduction and describe the opportunity. Our program includes community service
+                    and hands-on learning, and a conversation can help establish whether an idea is a good fit.</p>
+                <a class="content-link" href="index.html#activities">Explore our troop's activities <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="content-note">
+                <h2>Already part of Troop 93?</h2>
+                <p>Use the troop's member communications and Troop Web Host for activity schedules, sign-ups,
+                    and outing information. If you need help getting access, email the troop for guidance.</p>
+                <a class="content-link" href="https://www.troopwebhost.org/Troop93Fullerton/Index.htm"
+                    target="_blank" rel="noopener noreferrer">Go to Troop Web Host <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
