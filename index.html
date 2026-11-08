@@ -87,54 +87,90 @@
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="container section-padding">
-        <div class="grid lg-grid-cols-12 gap-8">
-
-            <!-- Adventures Column -->
-            <div class="lg-col-span-7" style="padding-top: 2.5rem;">
-                <div class="flex items-center justify-between"
-                    style="border-bottom: 1px solid rgba(13,27,18,0.05); padding-bottom: 1.5rem; margin-bottom: 2rem;">
-                    <div>
-                        <h2 style="font-size: 1.875rem;">Upcoming Adventures</h2>
-                        <p style="color: var(--moss); font-weight: 500; margin-top: 0.25rem;">Never miss an adventure.
-                            Below you'll find our troop's upcoming events, meetings, and special activities.</p>
-                    </div>
-                </div>
-
-                <div class="calendar-container"
-                    style="width: 100%; overflow: hidden; border-radius: 1rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
-                    <iframe
-                        src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FLos_Angeles&showPrint=0&showTitle=0&showNav=0&showCalendars=0&showTz=0&mode=AGENDA&src=ODU4cWd1Zm1sdmRncmUyNXFyOTBjajc5MmJ0ZjJtY2NAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23e4c441"
-                        style="border-width:0; width: 100%; height: 600px;" frameborder="0" scrolling="no"></iframe>
-                </div>
+    <!-- Troop Activities -->
+    <main class="container activities-main" id="activities">
+        <section aria-labelledby="activities-title">
+            <div class="activities-intro">
+                <span class="activities-eyebrow">Adventure. Service. Leadership.</span>
+                <h2 id="activities-title">A taste of life in Troop 93</h2>
+                <p>From a first night under the stars to a challenging backcountry trek, our scouts learn by doing.
+                    Here are a few examples of the experiences that make up our troop's program.</p>
             </div>
 
-            <!-- Sidebar Column -->
-            <div class="lg-col-span-5">
-                <div
-                    style="background-color: var(--khaki); border-radius: 1.5rem; padding: 2.5rem; position: sticky; top: 7rem; height: 600px; display: flex; flex-direction: column;">
-                    <div style="margin-bottom: 2rem;">
-                        <h2 style="font-size: 1.875rem;">Our Social Media Pages</h2>
-                        <p style="opacity: 0.7; margin-top: 0.5rem; font-weight: 500;">Follow our latest adventures,
-                            photos, and updates on our social media channels.</p>
-                    </div>
-
-                    <div class="flex flex-col gap-4">
-                        <a href="https://www.facebook.com/profile.php?id=100083252353105" target="_blank"
-                            class="btn-primary"
-                            style="width: 100%; background-color: #1877F2; color: var(--white); display: flex; align-items: center; justify-content: center; gap: 0.5rem; border: none; text-decoration: none;">
-                            Follow on Facebook
-                        </a>
-                        <a href="https://www.instagram.com/troop93/" target="_blank" class="btn-primary"
-                            style="width: 100%; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: var(--white); display: flex; align-items: center; justify-content: center; gap: 0.5rem; border: none; text-decoration: none;">
-                            Follow on Instagram
-                        </a>
-                    </div>
-                </div>
+            <div class="activities-grid">
+                <article class="card activity-card">
+                    <span class="material-symbols-outlined activity-icon" aria-hidden="true">camping</span>
+                    <h3>Camping &amp; summer camp</h3>
+                    <p>Time outdoors builds independence, friendships, and practical skills, with patrols working
+                        together around camp.</p>
+                    <p class="activity-example">Program highlights: Camp Morrison in Idaho, Camp Fiesta Island,
+                        and Lake Cachuma camping.</p>
+                </article>
+                <article class="card activity-card">
+                    <span class="material-symbols-outlined activity-icon" aria-hidden="true">hiking</span>
+                    <h3>Hiking &amp; backpacking</h3>
+                    <p>Scouts build confidence on beginner hikes and first backpacking trips, then work toward
+                        bigger mountain adventures.</p>
+                    <p class="activity-example">Program highlights: Mount Baldy day hikes, High Sierra backpacking,
+                        and the John Muir Trail.</p>
+                </article>
+                <article class="card activity-card">
+                    <span class="material-symbols-outlined activity-icon" aria-hidden="true">kayaking</span>
+                    <h3>Adventures on the water</h3>
+                    <p>Canoeing and rafting bring a different kind of teamwork, along with opportunities to learn
+                        swimming and water safety skills.</p>
+                    <p class="activity-example">Program highlights: Colorado River canoeing, American River rafting,
+                        and the Swimming merit badge.</p>
+                </article>
+                <article class="card activity-card">
+                    <span class="material-symbols-outlined activity-icon" aria-hidden="true">volunteer_activism</span>
+                    <h3>Service in our community</h3>
+                    <p>Giving back is part of scouting. Our scouts pitch in on projects that support neighbors
+                        and care for shared outdoor spaces.</p>
+                    <p class="activity-example">Program highlights: Love Fullerton, Scouting for Food, native plant
+                        restoration, and trail work.</p>
+                </article>
+                <article class="card activity-card">
+                    <span class="material-symbols-outlined activity-icon" aria-hidden="true">directions_bike</span>
+                    <h3>Cycling &amp; outdoor challenges</h3>
+                    <p>There is always a new challenge to try, whether it is riding with friends, learning to
+                        climb, or tackling a ropes course.</p>
+                    <p class="activity-example">Program highlights: holiday rides to the beach, rock climbing,
+                        and campouts with a ropes course.</p>
+                </article>
+                <article class="card activity-card">
+                    <span class="material-symbols-outlined activity-icon" aria-hidden="true">explore</span>
+                    <h3>Skills, discovery &amp; leadership</h3>
+                    <p>Hands-on activities help scouts explore interests, practice outdoor skills, and learn
+                        to lead their patrols.</p>
+                    <p class="activity-example">Program highlights: map and compass, wilderness first aid,
+                        knot tying, 3D printing, and scout leadership training.</p>
+                </article>
             </div>
+        </section>
 
-        </div>
+        <section class="activities-ahead" aria-labelledby="ahead-title">
+            <div>
+                <span class="activities-eyebrow">More to explore</span>
+                <h2 id="ahead-title">Looking ahead</h2>
+                <p>Our troop's plans include family campouts, rock climbing, and river rafting. Scouts also have
+                    first backpacking trips, cycling adventures, and community service to look forward to.</p>
+            </div>
+            <a href="join.html" class="btn-primary">Start your adventure</a>
+        </section>
+
+        <section class="activities-connect" aria-labelledby="connect-title">
+            <div>
+                <h2 id="connect-title">See our troop in action</h2>
+                <p>Follow our adventures, photos, and stories on social media.</p>
+            </div>
+            <div class="activities-social-links">
+                <a href="https://www.facebook.com/profile.php?id=100083252353105" target="_blank" rel="noopener noreferrer"
+                    class="activities-social-link">Facebook <span aria-hidden="true">↗</span></a>
+                <a href="https://www.instagram.com/troop93/" target="_blank" rel="noopener noreferrer"
+                    class="activities-social-link">Instagram <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -203,10 +239,6 @@
         </div>
     </footer>
 
-    <script src="js/config.js"></script>
-    <!-- <script src="js/home-events.js"></script> -->
-    <script src="js/config.js"></script>
-    <!-- <script src="js/home-events.js"></script> -->
     <script src="js/main.js"></script>
     <script src="js/content-loader.js"></script>
 </body>

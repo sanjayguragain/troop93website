@@ -23,8 +23,8 @@ Pages:
 Home
 About
 Leadership
-Calendar (Get is from https://www.TroopWebHost.org/iCalendar.aspx?a=2967&u=881458&z=28)
-Events (Get is from https://www.TroopWebHost.org/iCalendar.aspx?a=2967&u=881458&z=28)
+Activities showcase on the homepage: a curated selection of general activity examples.
+Do not publish calendar feeds, event subscription links, dates, or event logistics.
 Gallery
 Join Us
 Contact
@@ -36,7 +36,7 @@ Editing requirements:
 3. Add, edit, delete events.
 4. Upload and manage images.
 5. Edit leadership list.
-6. Edit calendar content.
+6. Edit general activity highlights without publishing the troop calendar.
 7. Manage homepage hero section.
 8. No coding required for editors.
 
@@ -110,4 +110,3 @@ Add SEO meta tags for each page.
 Add structured data for organization schema.
 
 Strong opinion: do not build a custom editing system. Use Decap CMS. It keeps everything clean, secure, and scalable for a troop.
-
