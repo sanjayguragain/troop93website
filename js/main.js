@@ -1,38 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile Navigation Toggle
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    const nav = document.querySelector('nav'); // Updated to target generic nav or add class
+    const menuButton = document.querySelector('.mobile-menu-btn');
+    const navigation = document.getElementById('site-navigation');
+    const desktop = window.matchMedia('(min-width: 1200px)');
 
-    if (menuBtn && nav) {
-        menuBtn.addEventListener('click', () => {
-            nav.classList.toggle('nav-open');
-            // Basic mobile menu toggle logic
-            if (nav.style.display === 'flex') {
-                nav.style.display = 'none';
-            } else {
-                nav.style.display = 'flex';
-                nav.style.flexDirection = 'column';
-                nav.style.position = 'absolute';
-                nav.style.top = '5rem';
-                nav.style.left = '0';
-                nav.style.right = '0';
-                nav.style.background = 'var(--white)';
-                nav.style.padding = '2rem';
-                nav.style.boxShadow = '0 10px 15px -3px rgba(0,0,0,0.1)';
+    if (menuButton && navigation) {
+        function setMenuOpen(open, restoreFocus = false) {
+            navigation.classList.toggle('nav-open', open);
+            menuButton.setAttribute('aria-expanded', String(open));
+            menuButton.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+            menuButton.querySelector('span').textContent = open ? 'close' : 'menu';
+            if (restoreFocus) menuButton.focus();
+        }
+
+        menuButton.addEventListener('click', () => {
+            setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true');
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+                setMenuOpen(false, true);
             }
+        });
+        navigation.addEventListener('click', event => {
+            if (event.target.closest('a')) setMenuOpen(false);
+        });
+        document.addEventListener('click', event => {
+            if (!navigation.contains(event.target) && !menuButton.contains(event.target)) setMenuOpen(false);
+        });
+        desktop.addEventListener('change', () => {
+            // A hidden mobile link must not retain keyboard focus when the viewport changes.
+            const focusWasInNavigation = navigation.contains(document.activeElement);
+            setMenuOpen(false, !desktop.matches && focusWasInNavigation);
         });
     }
 
-    // Sticky Header Scroll Effect
-    const header = document.querySelector('header');
+    const header = document.getElementById('main-header');
     if (header) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 20) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
+        const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 20);
+        window.addEventListener('scroll', updateHeader, { passive: true });
+        updateHeader();
     }
-
 });

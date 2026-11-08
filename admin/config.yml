@@ -90,17 +90,6 @@ collections:
       - {label: "Description/Subtitle", name: "description", widget: "text", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "gallery"
-    label: "Gallery"
-    folder: "data/gallery"
-    create: true
-    slug: "{{title}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["High Adventure", "Summer Camp", "Service Projects", "Troop Meetings"] }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Date", name: "date", widget: "string" }
-
   - name: "events"
     label: "Featured Events"
     folder: "data/events"

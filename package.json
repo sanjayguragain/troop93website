@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build && node --test tests/site.test.js",
     "cms": "npx decap-server",
-    "dev": "http-server"
+    "dev": "npm run build && http-server dist",
+    "build": "node scripts/build-site.js"
   },
   "repository": {
     "type": "git",
